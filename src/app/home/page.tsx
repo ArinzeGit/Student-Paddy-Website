@@ -12,14 +12,14 @@ const Home = () => {
         <div className="w-[min(50%,760px)] pb-[10px]">
           <h1
             className="text-[#474747]
-                font-[800] text-[56px] font-roboto leading-[1.375]"
+                font-[800] text-[56px] font-avenir leading-[1.375]"
           >
             Unlocking Talent,{" "}
             <span className="text-[#0F7863]">Empowering Students</span>
           </h1>
           <p
             className="text-[#474747]
-                font-[400] text-[20px] font-roboto leading-[1.75] mt-[36px]"
+                font-[400] text-[20px] font-avenir leading-[1.75] mt-[36px]"
           >
             At <span className="text-[#0F7863] font-[800]">Student Paddy</span>,
             we see a future where{" "}
@@ -45,7 +45,7 @@ const Home = () => {
             .
           </p>
           <div className="w-[85%]">
-            <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-roboto leading-[1] p-[27.5px] rounded-[50px]">
+            <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
               Get Started!
             </button>
             <div className="flex justify-between items-center gap-[5px] mt-[44px]">
@@ -90,13 +90,13 @@ const Home = () => {
         </div>
 
         <div className="w-[min(86%,1800px)] mx-auto">
-          <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[44px] font-roboto leading-[1.6] justify-center items-center">
+          <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Up-skilling & Networking</h2>
             <CloseQuotation />
           </div>
 
-          <div className="text-[#FFFFFF] font-[400] text-[20px] font-roboto leading-[1.75] text-center flex justify-between mt-[31px]">
+          <div className="text-[#FFFFFF] font-[400] text-[20px] font-avenir leading-[1.75] text-center flex justify-between mt-[31px]">
             <div className="w-[18%]">
               <Image
                 src={"/images/iphone-upskilling-hours.png"}
@@ -135,7 +135,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[44px] font-roboto leading-[1.6] justify-center items-center">
+          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Talent Mining & Monitoring</h2>
             <CloseQuotation />
@@ -149,7 +149,7 @@ const Home = () => {
             className="w-[78%] mt-[42px] mx-auto"
           />
 
-          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[44px] font-roboto leading-[1.6] justify-center items-center">
+          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Job Placement & Tracking</h2>
             <CloseQuotation />
@@ -178,7 +178,7 @@ const Home = () => {
         <div className="w-[min(86%,1800px)] mx-auto">
           <div className="flex gap-[5%] items-center">
             <div className="w-[45%]">
-              <h2 className="text-[#0F7863] font-[800] text-[33px] font-roboto leading-[1.67]">
+              <h2 className="text-[#0F7863] font-[800] text-[33px] font-avenir leading-[1.67]">
                 Student Paddy{" "}
                 <span className="font-[500] text-[#474747]">is a</span>{" "}
                 productivity multiplier{" "}
@@ -188,7 +188,7 @@ const Home = () => {
                 Employers
                 <span className="font-[500] text-[#474747]"> online.</span>
               </h2>
-              <p className="text-[#474747] font-[400] text-[20px] font-roboto leading-[1.75] pt-[38px]">
+              <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] pt-[38px]">
                 Our{" "}
                 <span className="text-[#0F7863] font-[800]">
                   comprehensive approach
@@ -254,7 +254,7 @@ const Home = () => {
             />
 
             <div className="w-[45%]">
-              <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[min(3vw,44px)] font-roboto leading-[1.6] justify-center items-center">
+              <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[min(3vw,44px)] font-avenir leading-[1.6] justify-center items-center">
                 <OpenQuotation />
                 <h2>
                   Partner <span className="text-[#474747]">with Us</span>
@@ -262,7 +262,7 @@ const Home = () => {
                 <CloseQuotation />
               </div>
 
-              <p className="text-[#474747] font-[400] text-[20px] font-roboto leading-[1.75] pt-[38px]">
+              <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] pt-[38px]">
                 Our
                 <span className="text-[#0F7863] font-[800]">
                   {" "}
@@ -298,7 +298,7 @@ const Home = () => {
                 quarterly.
               </p>
 
-              <button className="mt-[63px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-roboto leading-[1] p-[27.5px] rounded-[50px]">
+              <button className="mt-[63px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
                 Get Started!
               </button>
             </div>

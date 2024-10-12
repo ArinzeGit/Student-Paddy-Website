@@ -15,7 +15,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        roboto: ['Roboto', 'Montserrat', 'sans-serif'],
+        avenir: ['Avenir', 'sans-serif'],
       },
       letterSpacing:{
         '1': '0.01em',
