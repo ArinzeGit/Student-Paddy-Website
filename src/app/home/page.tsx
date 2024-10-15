@@ -1,82 +1,128 @@
+"use client";
 import CloseQuotation from "@/components/svg-components/CloseQuotation";
 import OpenQuotation from "@/components/svg-components/OpenQuotation";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    //mainly for setting the width of the logo container otherwise it would be 100% because of flex
+
+    const container = document.getElementById("logo-container");
+
+    // Check if the container is not null
+    if (container) {
+      const logos = container.querySelectorAll("img"); // Get all logos
+
+      setTimeout(() => {
+        let totalWidth = 0;
+
+        logos.forEach((logo) => {
+          const imgElement = logo as HTMLImageElement;
+
+          const width = imgElement.offsetWidth;
+          console.log("Logo width:", width); // Log each logo's width
+          totalWidth += width;
+        });
+
+        totalWidth += 200 * (logos.length - 1); //add the 200px gaps
+        console.log("Total width:", totalWidth);
+        // Set the container width to match the total logos width
+
+        container.style.width = `${totalWidth}px`;
+        // Apply animation based on the total width
+        const animationDuration = totalWidth / 150;
+        container.style.animation = `scroll ${animationDuration}s linear infinite`;
+
+        // Set the containers to visible once width is set
+        setIsLoaded(true);
+      }, 0); // Using a small timeout to ensure images are rendered
+    }
+  }, []);
+
   return (
     <div>
-      <div className="w-[min(86%,1800px)] mx-auto mt-[57px] pb-[5vw] flex gap-[5%]">
+      <div className="bg-white pt-[57px] pb-[5vw] ">
         {/*pb-[5vw] is to maintain slicing of image as image moves horizontally with screen width. 100vw*tan(6)=10.52vw would have kept the image completely safe*/}
 
-        <div className="w-[min(50%,760px)] pb-[10px]">
-          <h1
-            className="text-[#474747]
-                font-[800] text-[56px] font-avenir leading-[1.375]"
-          >
-            Unlocking Talent,{" "}
-            <span className="text-[#0F7863]">Empowering Students</span>
-          </h1>
-          <p
-            className="text-[#474747]
-                font-[400] text-[20px] font-avenir leading-[1.75] mt-[36px]"
-          >
-            At <span className="text-[#0F7863] font-[800]">Student Paddy</span>,
-            we see a future where{" "}
-            <span className="text-[#0F7863] font-[800]">screen time</span> and{" "}
-            <span className="text-[#0F7863] font-[800]">
-              practical experience
-            </span>{" "}
-            will determine{" "}
-            <span className="text-[#0F7863] font-[800]">career readiness</span>{" "}
-            for the modern workforce. To this end, we’ve built a comprehensive{" "}
-            <span className="text-[#0F7863] font-[800]">
-              talent management solution
-            </span>{" "}
-            that helps Higher Institutions to{" "}
-            <span className="text-[#0F7863] font-[800]">securely track</span>,{" "}
-            <span className="text-[#0F7863] font-[800]">improve</span> and{" "}
-            <span className="text-[#0F7863] font-[800]">validate</span> the{" "}
-            <span className="text-[#0F7863] font-[800]">career readiness</span>{" "}
-            of undergraduate students{" "}
-            <span className="text-[#0F7863] font-[800]">
-              beyond the classroom
-            </span>
-            .
-          </p>
-          <div className="w-[85%]">
-            <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
-              Get Started!
-            </button>
-            <div className="flex justify-between items-center gap-[5px] mt-[44px]">
-              <Link href={""} className="w-[44%]">
-                <Image
-                  src={"/images/badge-app-store.svg"}
-                  width={217}
-                  height={64}
-                  alt="App store download"
-                  className="w-full"
-                />
-              </Link>
-              <Link href={""} className="w-[44%]">
-                <Image
-                  src={"/images/badge-google-play.svg"}
-                  width={215}
-                  height={63}
-                  alt="Google play download"
-                  className="w-full"
-                />
-              </Link>
+        <div className="w-[min(86%,1800px)] mx-auto flex gap-[5%]">
+          <div className="w-[min(50%,760px)] pb-[10px]">
+            <h1
+              className="text-[#474747]
+                  font-[800] text-[56px] font-avenir leading-[1.375]"
+            >
+              Unlocking Talent,{" "}
+              <span className="text-[#0F7863]">Empowering Students</span>
+            </h1>
+            <p
+              className="text-[#474747]
+                  font-[400] text-[20px] font-avenir leading-[1.75] mt-[36px]"
+            >
+              At{" "}
+              <span className="text-[#0F7863] font-[800]">Student Paddy</span>,
+              we see a future where{" "}
+              <span className="text-[#0F7863] font-[800]">screen time</span> and{" "}
+              <span className="text-[#0F7863] font-[800]">
+                practical experience
+              </span>{" "}
+              will determine{" "}
+              <span className="text-[#0F7863] font-[800]">
+                career readiness
+              </span>{" "}
+              for the modern workforce. To this end, we’ve built a comprehensive{" "}
+              <span className="text-[#0F7863] font-[800]">
+                talent management solution
+              </span>{" "}
+              that helps Higher Institutions to{" "}
+              <span className="text-[#0F7863] font-[800]">securely track</span>,{" "}
+              <span className="text-[#0F7863] font-[800]">improve</span> and{" "}
+              <span className="text-[#0F7863] font-[800]">validate</span> the{" "}
+              <span className="text-[#0F7863] font-[800]">
+                career readiness
+              </span>{" "}
+              of undergraduate students{" "}
+              <span className="text-[#0F7863] font-[800]">
+                beyond the classroom
+              </span>
+              .
+            </p>
+            <div className="w-[85%]">
+              <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
+                Get Started!
+              </button>
+              <div className="flex justify-between items-center gap-[5px] mt-[44px]">
+                <Link href={""} className="w-[44%]">
+                  <Image
+                    src={"/images/badge-app-store.svg"}
+                    width={217}
+                    height={64}
+                    alt="App store download"
+                    className="w-full"
+                  />
+                </Link>
+                <Link href={""} className="w-[44%]">
+                  <Image
+                    src={"/images/badge-google-play.svg"}
+                    width={215}
+                    height={63}
+                    alt="Google play download"
+                    className="w-full"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-[min(50%,650px)] self-end">
-          <Image
-            src={"/images/picture-two-students.png"}
-            width={2781}
-            height={2532}
-            alt="Two students"
-          />
+          <div className="w-[min(50%,650px)] self-end">
+            <Image
+              src={"/images/picture-two-students.png"}
+              width={2781}
+              height={2532}
+              alt="Two students"
+            />
+          </div>
         </div>
       </div>
 
@@ -84,6 +130,7 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-top-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            {/* left and w are such that the marks stay like an underline for the image above it and follow it as screen gets wider*/}
             <div className=" h-[min(1.5vw,20px)] bg-white" />
             <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
           </div>
@@ -173,7 +220,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECF3F1] pt-[calc(10.52vw+43px)]">
+      <div className="bg-[#ECF3F1] relative z-[0] pt-[calc(10.52vw+43px)] pb-[20px]">
         {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 43px is the extra padding away from slant section */}
         <div className="w-[min(86%,1800px)] mx-auto">
           <div className="flex gap-[5%] items-center">
@@ -299,9 +346,140 @@ const Home = () => {
               </p>
 
               <button className="mt-[63px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
-                Get Started!
+                Contact Us
               </button>
             </div>
+          </div>
+        </div>
+
+        <div className="absolute bottom-0 left-0 w-full h-[10.6vw] bg-[#ECF3F1] transform skew-y-[6deg] origin-bottom-left z-[-1]">
+          {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
+          <div className="absolute bottom-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            <div className=" h-[min(1.5vw,20px)] bg-white" />
+            <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white py-[calc(10.52vw)]">
+        {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 32px is the extra padding away from slant section */}
+        <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
+          <OpenQuotation />
+          <h2>
+            Support <span className="text-[#474747]">&</span> Recognition
+          </h2>
+          <CloseQuotation />
+        </div>
+
+        <div className="mt-[4px] overflow-hidden">
+          <div
+            id="logo-container"
+            className={`flex items-center gap-[200px] ${
+              isLoaded ? "visible" : "invisible"
+            }`}
+          >
+            <Image
+              loading="eager"
+              src={"/images/logo-unilag.png"}
+              width={248}
+              height={233}
+              alt="Unilag logo"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-cmu-africa.png"}
+              width={298}
+              height={261}
+              alt="Carnegie Mellon University"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-al-ak-uni.png"}
+              width={256}
+              height={206}
+              alt="Al Akhawayn University"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-sand-tech.png"}
+              width={313}
+              height={163}
+              alt="Sand Technologies"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-afara.png"}
+              width={410}
+              height={405}
+              alt="The Afara Initiative"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-gsv-cup.png"}
+              width={338}
+              height={176}
+              alt="GSV Cup Elite 200"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-microsoft-founders.png"}
+              width={433}
+              height={168}
+              alt="Microsoft for Startups Founders Hub"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-safebridge.png"}
+              width={435}
+              height={161}
+              alt="SafeBridge"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-nvidia.png"}
+              width={371}
+              height={210}
+              alt="Nvidia"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-undp.png"}
+              width={301}
+              height={147}
+              alt="UNDP"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-alx.png"}
+              width={273}
+              height={273}
+              alt="alx ventures"
+            />
+            <Image
+              loading="eager"
+              src={"/images/logo-reliance.png"}
+              width={371}
+              height={131}
+              alt="Reliance Infosystems"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#ECF3F1] relative z-[0] pt-[20px]">
+        <div className="absolute top-0 right-0 w-full h-[10.6vw] bg-[#ECF3F1] transform skew-y-[6deg] origin-top-right z-[-1]">
+          {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
+          <div className="absolute top-[-1px] right-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            <div className=" h-[min(1.5vw,20px)] bg-white" />
+            <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
+          </div>
+        </div>
+
+        <div className="w-[min(86%,1800px)] mx-auto">
+          <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
+            <OpenQuotation />
+            <h2>Blog Posts</h2>
+            <CloseQuotation />
           </div>
         </div>
       </div>

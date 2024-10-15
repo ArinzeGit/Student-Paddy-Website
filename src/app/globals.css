@@ -47,3 +47,13 @@ body {
   font-style: normal;
   src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100vw);
+  }
+ 
+  100% {
+    transform: translateX(-100%);
+  }
+}
