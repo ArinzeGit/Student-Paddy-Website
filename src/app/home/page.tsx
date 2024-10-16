@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     //mainly for setting the width of the logo container otherwise it would be 100% because of flex
@@ -15,7 +15,7 @@ const Home = () => {
 
     // Check if the container is not null
     if (container) {
-      const logos = container.querySelectorAll("img"); // Get all logos
+      const logos = container.querySelectorAll(".logo"); // Get all logos
 
       setTimeout(() => {
         let totalWidth = 0;
@@ -38,7 +38,7 @@ const Home = () => {
         container.style.animation = `scroll ${animationDuration}s linear infinite`;
 
         // Set the containers to visible once width is set
-        setIsLoaded(true);
+        // setIsLoaded(true);
       }, 0); // Using a small timeout to ensure images are rendered
     }
   }, []);
@@ -126,7 +126,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#0F7863] relative z-[0]  py-[20px]">
+      <div className="bg-[#0F7863] relative z-[1]  py-[20px]">
         <div className="absolute top-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-top-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
@@ -374,11 +374,10 @@ const Home = () => {
         <div className="mt-[4px] overflow-hidden">
           <div
             id="logo-container"
-            className={`flex items-center gap-[200px] ${
-              isLoaded ? "visible" : "invisible"
-            }`}
+            className="flex items-center gap-[200px] relative my-[50px]"
           >
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-unilag.png"}
               width={248}
@@ -386,13 +385,15 @@ const Home = () => {
               alt="Unilag logo"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-cmu-africa.png"}
-              width={298}
-              height={261}
+              width={227}
+              height={191}
               alt="Carnegie Mellon University"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-al-ak-uni.png"}
               width={256}
@@ -400,6 +401,7 @@ const Home = () => {
               alt="Al Akhawayn University"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-sand-tech.png"}
               width={313}
@@ -407,13 +409,15 @@ const Home = () => {
               alt="Sand Technologies"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-afara.png"}
-              width={410}
-              height={405}
+              width={289}
+              height={183}
               alt="The Afara Initiative"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-gsv-cup.png"}
               width={338}
@@ -421,13 +425,15 @@ const Home = () => {
               alt="GSV Cup Elite 200"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-microsoft-founders.png"}
-              width={433}
-              height={168}
+              width={379}
+              height={107}
               alt="Microsoft for Startups Founders Hub"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-safebridge.png"}
               width={435}
@@ -435,13 +441,15 @@ const Home = () => {
               alt="SafeBridge"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-nvidia.png"}
-              width={371}
-              height={210}
+              width={213}
+              height={161}
               alt="Nvidia"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-undp.png"}
               width={301}
@@ -449,19 +457,125 @@ const Home = () => {
               alt="UNDP"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-alx.png"}
-              width={273}
-              height={273}
+              width={250}
+              height={185}
               alt="alx ventures"
             />
             <Image
+              className="logo"
               loading="eager"
               src={"/images/logo-reliance.png"}
               width={371}
               height={131}
               alt="Reliance Infosystems"
             />
+            <Image
+              className="logo"
+              loading="eager"
+              src={"/images/logo-ikedi.jpg"}
+              width={306}
+              height={109.3}
+              alt="ikedi"
+            />
+            <div
+              id="duplicate-logos"
+              className="flex items-center gap-[200px] absolute top-0 left-[calc(100%+200px)]"
+            >
+              <Image
+                loading="eager"
+                src={"/images/logo-unilag.png"}
+                width={248}
+                height={233}
+                alt="Unilag logo"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-cmu-africa.png"}
+                width={227}
+                height={191}
+                alt="Carnegie Mellon University"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-al-ak-uni.png"}
+                width={256}
+                height={206}
+                alt="Al Akhawayn University"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-sand-tech.png"}
+                width={313}
+                height={163}
+                alt="Sand Technologies"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-afara.png"}
+                width={289}
+                height={183}
+                alt="The Afara Initiative"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-gsv-cup.png"}
+                width={338}
+                height={176}
+                alt="GSV Cup Elite 200"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-microsoft-founders.png"}
+                width={379}
+                height={107}
+                alt="Microsoft for Startups Founders Hub"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-safebridge.png"}
+                width={435}
+                height={161}
+                alt="SafeBridge"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-nvidia.png"}
+                width={213}
+                height={161}
+                alt="Nvidia"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-undp.png"}
+                width={301}
+                height={147}
+                alt="UNDP"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-alx.png"}
+                width={250}
+                height={185}
+                alt="alx ventures"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-reliance.png"}
+                width={371}
+                height={131}
+                alt="Reliance Infosystems"
+              />
+              <Image
+                loading="eager"
+                src={"/images/logo-ikedi.jpg"}
+                width={459}
+                height={164}
+                alt="ikedi"
+              />
+            </div>
           </div>
         </div>
       </div>
