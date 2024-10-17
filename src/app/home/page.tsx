@@ -580,7 +580,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECF3F1] relative z-[0] pt-[20px]">
+      <div className="bg-[#ECF3F1] relative z-[0] pt-[20px] pb-[90px]">
         <div className="absolute top-0 right-0 w-full h-[10.6vw] bg-[#ECF3F1] transform skew-y-[6deg] origin-top-right z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] right-[calc(46vw+60px)] w-[min(44vw,750px)] ">
@@ -594,6 +594,15 @@ const Home = () => {
             <OpenQuotation />
             <h2>Blog Posts</h2>
             <CloseQuotation />
+          </div>
+
+          <div className="bg-[#E9E4F3] w-full px-[4%] py-[58px] flex justify-between items-center">
+            <p className="text-[#474747] font-[900] text-[30px] font-avenir leading-[1.16]">
+              Want to know more? Reach out to us today!
+            </p>
+            <button className="bg-[#5D4C80] rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]">
+              Contact Us
+            </button>
           </div>
         </div>
       </div>
