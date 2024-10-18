@@ -592,18 +592,62 @@ const Home = () => {
         <div className="w-[min(86%,1800px)] mx-auto">
           <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
             <OpenQuotation />
-            <h2>Blog Posts</h2>
+            <h2>Publications</h2>
             <CloseQuotation />
           </div>
 
-          <div className="bg-[#E9E4F3] w-full px-[4%] py-[58px] flex justify-between items-center">
-            <p className="text-[#474747] font-[900] text-[30px] font-avenir leading-[1.16]">
-              Want to know more? Reach out to us today!
-            </p>
-            <button className="bg-[#5D4C80] rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]">
-              Contact Us
-            </button>
-          </div>
+          <ol className="text-[#0F7863] font-[500] text-[30px] font-avenir  italic leading-[1.8] underline list-decimal list-inside space-y-[27px] mt-[56px]">
+            <li>
+              <Link href={""}>
+                University of Lagos signs MOU with Student Paddy - Vanguard News
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                University of Lagos signs MOU with Student Paddy - TVC News
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                University of Lagos signs MOU with Student Paddy - AIT SASBI
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                Carnegie Mellon University Product Innovation Lab Workshop 2024
+                - LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                Carnegie Mellon University Product Innovation Lab Workshop 2024
+                - LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                Carnegie Mellon University Product Innovation Lab Workshop 2024
+                - LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href={""}>
+                Carnegie Mellon University Product Innovation Lab Workshop 2024
+                - LinkedIn
+              </Link>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div className="bg-[#FFFFFF] pt-[94px] pb-[90px]">
+        <div className="bg-[#E9E4F3] w-[min(86%,1800px)] mx-auto px-[4%] py-[58px] flex justify-between items-center">
+          <p className="text-[#474747] font-[900] text-[30px] font-avenir leading-[1.16]">
+            Want to know more? Reach out to us today!
+          </p>
+          <button className="bg-[#5D4C80] rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]">
+            Contact Us
+          </button>
         </div>
       </div>
     </div>
