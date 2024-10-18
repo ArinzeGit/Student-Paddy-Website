@@ -597,42 +597,42 @@ const Home = () => {
             <CloseQuotation />
           </div>
 
-          <ol className="text-[#0F7863] font-[500] text-[30px] font-avenir  italic leading-[1.8] underline list-decimal list-inside space-y-[27px] mt-[56px]">
+          <ol className="text-[#0F7863] font-[500] text-[30px] font-avenir italic leading-[1.8] list-decimal list-inside space-y-[27px] mt-[56px]">
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 University of Lagos signs MOU with Student Paddy - Vanguard News
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 University of Lagos signs MOU with Student Paddy - TVC News
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 University of Lagos signs MOU with Student Paddy - AIT SASBI
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={""} className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
