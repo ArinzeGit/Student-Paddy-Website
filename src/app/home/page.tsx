@@ -91,7 +91,7 @@ const Home = () => {
             </p>
             <div className="w-[85%]">
               <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
-                Get Started!
+                Book a Demo
               </button>
               <div className="flex justify-between items-center gap-[5px] mt-[44px]">
                 <Link href={""} className="w-[44%]">
@@ -115,6 +115,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="w-[min(50%,650px)] self-end">
             <Image
               src={"/images/picture-two-students.png"}
