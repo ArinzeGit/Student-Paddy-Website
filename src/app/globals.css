@@ -57,3 +57,14 @@ body {
     transform: translateX(calc(-100% - 200px));
   }
 }
+
+select {
+  appearance: none; /* Hides the default arrow */
+  -webkit-appearance: none; /* Safari-specific */
+  -moz-appearance: none; /* Firefox-specific */
+  background-image: url('../../public/images/icon-view-down.png');
+  background-repeat: no-repeat;
+  background-position: right 16px center; /* Adjusts the arrow position */
+  background-size: 12px 7px; /* Arrow size */
+  padding-right: 40px; /* Creates space for the arrow */
+}
