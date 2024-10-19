@@ -13,7 +13,6 @@ const NavBar = () => {
       />
       <div className="flex self-end">
         <NavLink label="Home" href="/home" />
-        <NavLink label="Placements" href="/placements" />
         <NavLink label="Higher Institution" href="/higher-institution" />
         <NavLink label="Contact Us" href="/contact-us" />
       </div>
