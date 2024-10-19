@@ -474,11 +474,11 @@ const HigherInstitution = () => {
               alt="Reliance Infosystems"
             />
             <Image
-              className="logo"
+              className="logo w-[306px]"
               loading="eager"
               src={"/images/logo-ikedi.jpg"}
-              width={306}
-              height={109.3}
+              width={459}
+              height={164}
               alt="ikedi"
             />
             <div
@@ -570,6 +570,7 @@ const HigherInstitution = () => {
                 alt="Reliance Infosystems"
               />
               <Image
+                className="w-[306px]"
                 loading="eager"
                 src={"/images/logo-ikedi.jpg"}
                 width={459}
