@@ -1,7 +1,15 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 const ContactUs = () => {
+  const router = useRouter();
+  const handleSubmit = () => {
+    router.push("/contact-us/message-submitted");
+  };
+
   return (
-    <div>
-      <h1 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59] text-center mt-[62px]">
+    <div className="pt-[62px]">
+      <h1 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59] text-center">
         Contact Us
       </h1>
       <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] text-center mt-[27px]">
@@ -61,7 +69,10 @@ const ContactUs = () => {
         </div>
 
         <div className="text-center mt-[56px]">
-          <button className="px-[44px] py-[18px] text-white font-[900] text-[16px] font-avenir leading-[1.125] bg-[#5D4C80] rounded-full focus:outline-none active:ring-4 active:ring-purple-300">
+          <button
+            onClick={() => handleSubmit()}
+            className="px-[44px] py-[18px] text-white font-[900] text-[16px] font-avenir leading-[1.125] bg-[#5D4C80] rounded-full focus:outline-none active:ring-4 active:ring-purple-300"
+          >
             Submit
           </button>
         </div>
