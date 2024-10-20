@@ -19,9 +19,7 @@ const ContactUs = () => {
       <div className="max-w-[628px] mx-auto p-[30px] border-[0.4px] border-[#98B0A9] rounded-[4px] mt-[42px] mb-[120px]">
         <div>
           <select className="block w-full px-[32px] py-[15px] text-[#474747] font-[300] text-[16px] font-avenir leading-[1.5] bg-[#F0F1F1] rounded-[4px] focus:outline-none focus:border-indigo-500">
-            <option value="" disabled selected>
-              Please select a category
-            </option>
+            <option>Please select a category</option>
             <option>Category 1</option>
             <option>Category 2</option>
             <option>Category 3</option>
