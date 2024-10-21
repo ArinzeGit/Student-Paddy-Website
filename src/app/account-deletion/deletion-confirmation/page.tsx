@@ -37,7 +37,7 @@ const DeletionConfirmation = () => {
       />
       <button
         onClick={() => handleSubmit()}
-        className="mt-[21px] px-[83px] py-[11.5px] text-white font-[500] text-[14px] font-avenir leading-[1.37] bg-[#E31E1E] rounded-full focus:outline-none active:ring-4 active:ring-purple-300"
+        className="mt-[21px] px-[83px] py-[11.5px] text-white font-[500] text-[14px] font-avenir leading-[1.37] bg-[#E31E1E] rounded-full focus:outline-none active:ring-4 active:ring-[#F19999]"
       >
         Delete my account
       </button>
