@@ -29,6 +29,13 @@ body {
 /* fonts */
 @font-face {
   font-family: 'Avenir';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./fonts/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
   font-weight: 400;
   font-style: normal;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
@@ -46,6 +53,13 @@ body {
   font-weight: 800;
   font-style: normal;
   src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 900;
+  font-style: normal;
+  src: url('./fonts/Avenir-Black.ttf') format('truetype');
 }
 
 @keyframes scroll {
