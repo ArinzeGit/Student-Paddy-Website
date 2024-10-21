@@ -19,7 +19,7 @@ export default function RootLayout({
           <NavBar />
         </nav>
         <div className="overflow-y-auto no-scrollbar">
-          <main>{children}</main>
+          <main className="min-h-[calc(100vh-457px)]">{children}</main>
           <footer>
             <Footer />
           </footer>
