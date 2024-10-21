@@ -9,7 +9,7 @@ const MessageSubmitted = () => {
   };
 
   return (
-    <div className="text-center pt-[91px]">
+    <div className="text-center pt-[91px] pb-[47px]">
       <h2 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59]">
         We’ve received your submission!
       </h2>
