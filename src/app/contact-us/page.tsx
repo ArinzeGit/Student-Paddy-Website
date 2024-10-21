@@ -8,7 +8,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-[62px]">
+    <div className="pt-[62px] pb-[120px]">
       <h1 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59] text-center">
         Contact Us
       </h1>
@@ -16,7 +16,7 @@ const ContactUs = () => {
         Get in touch and we’ll respond to your inquiries in a timely manner!
       </p>
 
-      <div className="max-w-[628px] mx-auto p-[30px] border-[0.4px] border-[#98B0A9] rounded-[4px] mt-[42px] mb-[120px]">
+      <div className="max-w-[628px] mx-auto p-[30px] border-[0.4px] border-[#98B0A9] rounded-[4px] mt-[42px]">
         <div>
           <select className="block w-full px-[32px] py-[15px] text-[#474747] font-[300] text-[16px] font-avenir leading-[1.5] bg-[#F0F1F1] rounded-[4px] focus:outline-none focus:border-indigo-500">
             <option>Please select a category</option>
@@ -63,7 +63,7 @@ const ContactUs = () => {
             placeholder="Message"
             rows={10}
             className="block w-full px-[32px] py-[15px] text-[#474747] font-[300] text-[16px] font-avenir leading-[1.5] bg-[#F0F1F1] rounded-[4px] focus:outline-none focus:border-indigo-500"
-          ></textarea>
+          />
         </div>
 
         <div className="text-center mt-[56px]">
