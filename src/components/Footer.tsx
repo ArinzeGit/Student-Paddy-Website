@@ -75,7 +75,7 @@ const Footer = () => {
           <Link href={""} className="font-[400] text-[16px]">
             Cookie Policy
           </Link>
-          <Link href={""} className="font-[400] text-[16px]">
+          <Link href={"/account-deletion"} className="font-[400] text-[16px]">
             Account Deletion
           </Link>
         </div>
