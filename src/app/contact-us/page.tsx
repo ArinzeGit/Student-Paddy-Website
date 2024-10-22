@@ -20,9 +20,12 @@ const ContactUs = () => {
         <div>
           <select className="block w-full px-[32px] py-[15px] text-[#474747] font-[300] text-[16px] font-avenir leading-[1.5] bg-[#F0F1F1] rounded-[4px] focus:outline-none focus:border-indigo-500">
             <option>Please select a category</option>
-            <option>Category 1</option>
-            <option>Category 2</option>
-            <option>Category 3</option>
+            <option>University representative</option>
+            <option>Employer</option>
+            <option>Student</option>
+            <option>Graduate</option>
+            <option>Working professional</option>
+            <option>Other</option>
           </select>
         </div>
 
