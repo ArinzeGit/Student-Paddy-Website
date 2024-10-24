@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 const transporter = nodemailer.createTransport({
   service: "outlook",
   auth: {
-    user: "DoNotReply@studentpaddy.com", 
+    user: "no-reply@studentpaddy.com", 
     pass: process.env.EMAIL_PASSWORD,
   },
 });
@@ -19,16 +19,16 @@ export async function POST(request: Request) {
 
   // Email to community@studentpaddy.com
   const mailOptionsToCommunity = {
-    from: "DoNotReply@studentpaddy.com",
+    from: "no-reply@studentpaddy.com",
     to: "community@studentpaddy.com",
-    replyTo: email, // Set the replyTo as user's email
+    replyTo: email,
     subject: `New Contact Us Message: ${subject}`,
     text: `You have received a new message from ${firstName} ${lastName} (${email}).\n\nCategory: ${category}\nMessage: ${message}`,
   };
 
   // Confirmation email to the user
   const mailOptionsToUser = {
-    from: "DoNotReply@studentpaddy.com",
+    from: "no-reply@studentpaddy.com",
     to: email,
     replyTo: "community@studentpaddy.com",
     subject: "We have received your message",
