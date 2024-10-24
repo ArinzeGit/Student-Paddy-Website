@@ -147,7 +147,7 @@ const HigherInstitution = () => {
         </div>
       </div>
 
-      <div className="bg-[#0F7863] relative z-[1]  py-[20px]">
+      <div className="bg-[#0F7863] relative z-[1] py-[20px]">
         <div className="absolute top-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-top-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
@@ -235,6 +235,7 @@ const HigherInstitution = () => {
         <div className="absolute bottom-0 right-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-bottom-right z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute bottom-[-1px] right-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            {/* right and w are such that the mark is identical to the first (beneath the picture of two students). Check the first of mark to see reason for the values*/}
             <div className=" h-[min(1.5vw,20px)] bg-[#ECF3F1]" />
             <div className="h-[min(1.5vw,20px)] bg-[#ECF3F1] mt-[min(1.87vw,25px)]" />
           </div>
@@ -376,13 +377,14 @@ const HigherInstitution = () => {
         <div className="absolute bottom-0 left-0 w-full h-[10.6vw] bg-[#ECF3F1] transform skew-y-[6deg] origin-bottom-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute bottom-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            {/* left and w are such that the mark is identical to the first (beneath the picture of two students). Check the first of mark to see reason for the values*/}
             <div className=" h-[min(1.5vw,20px)] bg-white" />
             <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
           </div>
         </div>
       </div>
 
-      <div className="bg-white py-[calc(10.52vw)]">
+      <div className="bg-white py-[calc(10.52vw+32px)]">
         {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 32px is the extra padding away from slant section */}
         <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
           <OpenQuotation />
@@ -593,6 +595,7 @@ const HigherInstitution = () => {
         <div className="absolute top-0 right-0 w-full h-[10.6vw] bg-[#ECF3F1] transform skew-y-[6deg] origin-top-right z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches up to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] right-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            {/* right and w are such that the mark is identical to the first (beneath the picture of two students). Check the first of mark to see reason for the values*/}
             <div className=" h-[min(1.5vw,20px)] bg-white" />
             <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
           </div>
