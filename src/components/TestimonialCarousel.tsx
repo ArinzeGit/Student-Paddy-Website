@@ -25,7 +25,7 @@ const testimonials = [
     name: "Fuad Adegoke",
     role: "System Engineering Student",
     feedback:
-      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job. It was a pivotal moment in my career journey.",
+      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job.",
     image: "/images/picture-fuad-adegoke.png",
   },
   {
@@ -46,7 +46,7 @@ const testimonials = [
     name: "Fuad Adegoke",
     role: "System Engineering Student",
     feedback:
-      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job. It was a pivotal moment in my career journey.",
+      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job.",
     image: "/images/picture-fuad-adegoke.png",
   },
   {
@@ -67,7 +67,7 @@ const testimonials = [
     name: "Fuad Adegoke",
     role: "System Engineering Student",
     feedback:
-      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job. It was a pivotal moment in my career journey.",
+      "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job.",
     image: "/images/picture-fuad-adegoke.png",
   },
   {
