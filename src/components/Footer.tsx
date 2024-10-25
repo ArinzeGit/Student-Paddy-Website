@@ -53,13 +53,13 @@ const Footer = () => {
       <div className="text-[#FFFFFF] font-avenir leading-[1.37] flex gap-[80px]">
         <div className="flex flex-col gap-[33px]">
           <p className="font-[800] text-[20px]">Company</p>
-          <Link href={""} className="font-[400] text-[16px]">
-            Placements
+          <Link href={"/home"} className="font-[400] text-[16px]">
+            Home
           </Link>
-          <Link href={""} className="font-[400] text-[16px]">
+          <Link href={"/higher-institution"} className="font-[400] text-[16px]">
             Higher Institution
           </Link>
-          <Link href={""} className="font-[400] text-[16px]">
+          <Link href={"/contact-us"} className="font-[400] text-[16px]">
             Contact Us
           </Link>
           <Link href={""} className="font-[400] text-[16px]">
