@@ -60,7 +60,12 @@ const HigherInstitution = () => {
                 Book a Demo
               </Link>
               <div className="flex justify-between items-center gap-[5px] mt-[44px]">
-                <Link href="" className="w-[44%]">
+                <Link
+                  href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[44%]"
+                >
                   <Image
                     src={"/images/badge-app-store.svg"}
                     width={217}
@@ -69,7 +74,12 @@ const HigherInstitution = () => {
                     className="w-full"
                   />
                 </Link>
-                <Link href="" className="w-[44%]">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.paddy_bare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[44%]"
+                >
                   <Image
                     src={"/images/badge-google-play.svg"}
                     width={215}
