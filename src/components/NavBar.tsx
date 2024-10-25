@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="w-[min(86%,1800px)] min-h-[100px] mx-auto flex items-center justify-between">
       <Image
-        src={"/images/logo-student-paddy.svg"}
+        src="/images/logo-student-paddy.svg"
         width={184}
         height={53}
         alt="Student paddy logo"
@@ -23,7 +23,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src={"/images/badge-app-store.svg"}
+            src="/images/badge-app-store.svg"
             width={116}
             height={34}
             alt="App store download"
@@ -35,7 +35,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src={"/images/badge-google-play.svg"}
+            src="/images/badge-google-play.svg"
             width={116}
             height={34}
             alt="Google play download"

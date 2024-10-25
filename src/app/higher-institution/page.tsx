@@ -67,7 +67,7 @@ const HigherInstitution = () => {
                   className="w-[44%]"
                 >
                   <Image
-                    src={"/images/badge-app-store.svg"}
+                    src="/images/badge-app-store.svg"
                     width={217}
                     height={64}
                     alt="App store download"
@@ -81,7 +81,7 @@ const HigherInstitution = () => {
                   className="w-[44%]"
                 >
                   <Image
-                    src={"/images/badge-google-play.svg"}
+                    src="/images/badge-google-play.svg"
                     width={215}
                     height={63}
                     alt="Google play download"
@@ -94,7 +94,7 @@ const HigherInstitution = () => {
 
           <div className="w-[min(50%,650px)] self-end">
             <Image
-              src={"/images/picture-two-students.png"}
+              src="/images/picture-two-students.png"
               width={2781}
               height={2532}
               alt="Two students"
@@ -123,7 +123,7 @@ const HigherInstitution = () => {
           <div className="text-[#FFFFFF] font-[400] text-[20px] font-avenir leading-[1.75] text-center flex justify-between mt-[31px]">
             <div className="w-[18%]">
               <Image
-                src={"/images/iphone-upskilling-hours.png"}
+                src="/images/iphone-upskilling-hours.png"
                 width={691}
                 height={1377}
                 alt="Iphone screenshot"
@@ -132,7 +132,7 @@ const HigherInstitution = () => {
             </div>
             <div className="w-[18%]">
               <Image
-                src={"/images/iphone-skill-based-content.png"}
+                src="/images/iphone-skill-based-content.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
@@ -141,7 +141,7 @@ const HigherInstitution = () => {
             </div>
             <div className="w-[18%]">
               <Image
-                src={"/images/iphone-badges.png"}
+                src="/images/iphone-badges.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
@@ -150,7 +150,7 @@ const HigherInstitution = () => {
             </div>
             <div className="w-[18%]">
               <Image
-                src={"/images/iphone-campus-peers.png"}
+                src="/images/iphone-campus-peers.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
@@ -166,7 +166,7 @@ const HigherInstitution = () => {
           </div>
 
           <Image
-            src={"/images/macbook-talent-mining.png"}
+            src="/images/macbook-talent-mining.png"
             width={2925}
             height={1827}
             alt="Macbook screenshot"
@@ -180,7 +180,7 @@ const HigherInstitution = () => {
           </div>
 
           <Image
-            src={"/images/macbook-job-placement.png"}
+            src="/images/macbook-job-placement.png"
             width={2926}
             height={1827}
             alt="Macbook screenshot"
@@ -261,7 +261,7 @@ const HigherInstitution = () => {
             </div>
 
             <Image
-              src={"/images/resume-rocket-building.png"}
+              src="/images/resume-rocket-building.png"
               width={1872}
               height={1827}
               alt="Resume, rocket, building"
@@ -271,7 +271,7 @@ const HigherInstitution = () => {
 
           <div className="flex gap-[5%] items-center mt-[81px]">
             <Image
-              src={"/images/student-career-journey.png"}
+              src="/images/student-career-journey.png"
               width={1767}
               height={1767}
               alt="Student career journey"

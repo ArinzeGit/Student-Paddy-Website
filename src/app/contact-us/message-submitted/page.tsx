@@ -21,21 +21,21 @@ const MessageSubmitted = () => {
       </button>
       <div className="flex items-center justify-center">
         <Image
-          src={"/images/picture-onboarding.png"}
+          src="/images/picture-onboarding.png"
           width={1113}
           height={1392}
           alt="Onboarding"
           className="w-[25%]"
         />
         <Image
-          src={"/images/picture-earn-credentials.png"}
+          src="/images/picture-earn-credentials.png"
           width={1077}
           height={1350}
           alt="Earn Credentials"
           className="w-[25%]"
         />
         <Image
-          src={"/images/picture-employability.png"}
+          src="/images/picture-employability.png"
           width={1074}
           height={1341}
           alt="Employability"

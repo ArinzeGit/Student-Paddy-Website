@@ -125,7 +125,6 @@ const TestimonialCarousel = () => {
             {testimonials.map((testimonial, index) => (
               <div className="w-1/3 px-[1.4%] flex-shrink-0" key={index}>
                 <div className="bg-white rounded-[4px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center h-full flex flex-col">
-                  {/* <img src={testimonial.image} alt={testimonial.name} /> */}
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}

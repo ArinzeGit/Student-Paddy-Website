@@ -23,7 +23,7 @@ const Home = () => {
             <div className="bg-[white] rounded-[8px] py-[55px] px-[20px] font-avenir flex justify-center items-center relative flex-1">
               <div className="bg-[rgba(11,138,0,0.15)] rounded-[50px] py-[3px] px-[5px] absolute top-[19px] left-[31px]">
                 <Image
-                  src={"/images/icon-trending-up.svg"}
+                  src="/images/icon-trending-up.svg"
                   alt="Trending up"
                   width={15}
                   height={14}
@@ -38,7 +38,7 @@ const Home = () => {
               </p>
               <div className="flex gap-[18px] absolute w-full justify-center items-center bottom-[-33px] left-[50%] translate-x-[-50%] translate-y-[100%]">
                 <Image
-                  src={"/images/icon-total-placements.svg"}
+                  src="/images/icon-total-placements.svg"
                   alt="Total placements"
                   width={44}
                   height={44}
@@ -52,7 +52,7 @@ const Home = () => {
             <div className="bg-[white] rounded-[8px] py-[55px] px-[20px] font-avenir flex justify-center items-center relative flex-1">
               <div className="bg-[rgba(11,138,0,0.15)] rounded-[50px] py-[3px] px-[5px] absolute top-[19px] left-[31px]">
                 <Image
-                  src={"/images/icon-trending-up.svg"}
+                  src="/images/icon-trending-up.svg"
                   alt="Trending up"
                   width={15}
                   height={14}
@@ -67,7 +67,7 @@ const Home = () => {
               </p>
               <div className="flex gap-[18px] absolute w-full justify-center items-center bottom-[-33px] left-[50%] translate-x-[-50%] translate-y-[100%]">
                 <Image
-                  src={"/images/icon-total-stipends.svg"}
+                  src="/images/icon-total-stipends.svg"
                   alt="Total Stipends Disbursed"
                   width={44}
                   height={44}
@@ -81,7 +81,7 @@ const Home = () => {
             <div className="bg-[white] rounded-[8px] py-[55px] px-[20px] font-avenir flex justify-center items-center relative flex-1">
               <div className="bg-[rgba(11,138,0,0.15)] rounded-[50px] py-[3px] px-[5px] absolute top-[19px] left-[31px]">
                 <Image
-                  src={"/images/icon-trending-up.svg"}
+                  src="/images/icon-trending-up.svg"
                   alt="Trending up"
                   width={15}
                   height={14}
@@ -96,7 +96,7 @@ const Home = () => {
               </p>
               <div className="flex gap-[18px] absolute w-full justify-center items-center bottom-[-33px] left-[50%] translate-x-[-50%] translate-y-[100%]">
                 <Image
-                  src={"/images/icon-total-upskilling-hours.svg"}
+                  src="/images/icon-total-upskilling-hours.svg"
                   alt="Total Up-skilling Hours"
                   width={44}
                   height={44}
@@ -118,7 +118,7 @@ const Home = () => {
       <div className="bg-[#FFFFFF] pt-[55px] pb-[max(calc(6vw-222px),0px)]">
         <div className="w-[min(80%,1800px)] mx-auto">
           <Image
-            src={"/images/picture-three-professionals.png"}
+            src="/images/picture-three-professionals.png"
             alt="Three professionals"
             width={3804}
             height={3554}
@@ -157,7 +157,7 @@ const Home = () => {
           <div className="flex gap-[5%] items-center">
             <div className="flex items-start gap-[35px] w-[50%]">
               <Image
-                src={"/images/icon-star-in-circle.svg"}
+                src="/images/icon-star-in-circle.svg"
                 alt="Star icon"
                 width={92}
                 height={92}
@@ -181,7 +181,7 @@ const Home = () => {
             </div>
 
             <Image
-              src={"/images/picture-real-world-exposure.png"}
+              src="/images/picture-real-world-exposure.png"
               alt="Real world exposure"
               width={1428}
               height={1649}
@@ -192,7 +192,7 @@ const Home = () => {
           <div className="flex gap-[5%] items-center flex-row-reverse">
             <div className="flex items-start gap-[35px] w-[50%] flex-row-reverse">
               <Image
-                src={"/images/icon-star-in-circle.svg"}
+                src="/images/icon-star-in-circle.svg"
                 alt="Star icon"
                 width={92}
                 height={92}
@@ -216,7 +216,7 @@ const Home = () => {
             </div>
 
             <Image
-              src={"/images/picture-guided-mentorship.png"}
+              src="/images/picture-guided-mentorship.png"
               alt="Guided mentorship"
               width={1304}
               height={1538}
@@ -227,7 +227,7 @@ const Home = () => {
           <div className="flex gap-[5%] items-center">
             <div className="flex items-start gap-[35px] w-[50%]">
               <Image
-                src={"/images/icon-star-in-circle.svg"}
+                src="/images/icon-star-in-circle.svg"
                 alt="Star icon"
                 width={92}
                 height={92}
@@ -251,7 +251,7 @@ const Home = () => {
             </div>
 
             <Image
-              src={"/images/picture-industry-connections.png"}
+              src="/images/picture-industry-connections.png"
               alt="Industry connections"
               width={1650}
               height={1549}
@@ -262,7 +262,7 @@ const Home = () => {
           <div className="flex gap-[5%] items-center flex-row-reverse">
             <div className="flex items-start gap-[35px] w-[50%] flex-row-reverse">
               <Image
-                src={"/images/icon-star-in-circle.svg"}
+                src="/images/icon-star-in-circle.svg"
                 alt="Star icon"
                 width={92}
                 height={92}
@@ -286,7 +286,7 @@ const Home = () => {
             </div>
 
             <Image
-              src={"/images/picture-career-pathway-analytics.png"}
+              src="/images/picture-career-pathway-analytics.png"
               alt="Career pathway analytics"
               width={1524}
               height={1345}

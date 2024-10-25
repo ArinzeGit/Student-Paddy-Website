@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="px-[7%] pt-[60px] pb-[50px] bg-[#0F7863] flex justify-between">
       <div>
         <Image
-          src={"/images/logo-student-paddy-white.svg"}
+          src="/images/logo-student-paddy-white.svg"
           width={"227"}
           height={"65"}
           alt="student paddy logo"
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex gap-[24px] mt-[42px]">
           <Link href="">
             <Image
-              src={"/images/icon-linkedin.svg"}
+              src="/images/icon-linkedin.svg"
               width={"27"}
               height={"27"}
               alt="LinkedIn"
@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
           <Link href="">
             <Image
-              src={"/images/icon-instagram.svg"}
+              src="/images/icon-instagram.svg"
               width={"26"}
               height={"26"}
               alt="Instagram"
@@ -33,7 +33,7 @@ const Footer = () => {
           </Link>
           <Link href="">
             <Image
-              src={"/images/icon-twitter.svg"}
+              src="/images/icon-twitter.svg"
               width={"26"}
               height={"26"}
               alt="Twitter"
@@ -41,7 +41,7 @@ const Footer = () => {
           </Link>
           <Link href="">
             <Image
-              src={"/images/icon-facebook.svg"}
+              src="/images/icon-facebook.svg"
               width={"25"}
               height={"25"}
               alt="Facebook"
