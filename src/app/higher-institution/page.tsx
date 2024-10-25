@@ -54,13 +54,13 @@ const HigherInstitution = () => {
             </p>
             <div className="w-[85%]">
               <Link
-                href={"/contact-us"}
+                href="/contact-us"
                 className="mt-[52px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
               >
                 Book a Demo
               </Link>
               <div className="flex justify-between items-center gap-[5px] mt-[44px]">
-                <Link href={""} className="w-[44%]">
+                <Link href="" className="w-[44%]">
                   <Image
                     src={"/images/badge-app-store.svg"}
                     width={217}
@@ -69,7 +69,7 @@ const HigherInstitution = () => {
                     className="w-full"
                   />
                 </Link>
-                <Link href={""} className="w-[44%]">
+                <Link href="" className="w-[44%]">
                   <Image
                     src={"/images/badge-google-play.svg"}
                     width={215}
@@ -314,7 +314,7 @@ const HigherInstitution = () => {
               </p>
 
               <Link
-                href={"/contact-us"}
+                href="/contact-us"
                 className="mt-[63px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
               >
                 Contact Us
@@ -357,40 +357,40 @@ const HigherInstitution = () => {
 
           <ol className="text-[#0F7863] font-[500] text-[30px] font-avenir italic leading-[1.8] list-decimal list-inside space-y-[27px] mt-[56px]">
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 University of Lagos signs MOU with Student Paddy - Vanguard News
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 University of Lagos signs MOU with Student Paddy - TVC News
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 University of Lagos signs MOU with Student Paddy - AIT SASBI
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
             </li>
             <li>
-              <Link href={""} className="underline">
+              <Link href="" className="underline">
                 Carnegie Mellon University Product Innovation Lab Workshop 2024
                 - LinkedIn
               </Link>
@@ -405,7 +405,7 @@ const HigherInstitution = () => {
             Want to know more? Reach out to us today!
           </p>
           <Link
-            href={"/contact-us"}
+            href="/contact-us"
             className="bg-[#5D4C80] block rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]"
           >
             Contact Us

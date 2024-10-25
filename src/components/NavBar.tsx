@@ -17,7 +17,11 @@ const NavBar = () => {
         <NavLink label="Contact Us" href="/contact-us" />
       </div>
       <div className="flex gap-[19px]">
-        <Link href={""}>
+        <Link
+          href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src={"/images/badge-app-store.svg"}
             width={116}
@@ -25,7 +29,11 @@ const NavBar = () => {
             alt="App store download"
           />
         </Link>
-        <Link href={""}>
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.paddy_bare"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src={"/images/badge-google-play.svg"}
             width={116}

@@ -172,7 +172,7 @@ const Home = () => {
                   learn how professionals tackle everyday challenges.
                 </p>
                 <Link
-                  href={"/contact-us"}
+                  href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[18px] font-avenir leading-[1.38] p-[18px] rounded-[50px]"
                 >
                   Get Started
@@ -207,7 +207,7 @@ const Home = () => {
                   navigate your career path and provide expert insights.
                 </p>
                 <Link
-                  href={"/contact-us"}
+                  href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[18px] font-avenir leading-[1.38] p-[18px] rounded-[50px]"
                 >
                   Sign me up!
@@ -242,7 +242,7 @@ const Home = () => {
                   and employers across various industries.
                 </p>
                 <Link
-                  href={"/contact-us"}
+                  href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[18px] font-avenir leading-[1.38] p-[18px] rounded-[50px]"
                 >
                   I'm interested
@@ -277,7 +277,7 @@ const Home = () => {
                   analytics, showing how you’re preparing for your career.
                 </p>
                 <Link
-                  href={"/contact-us"}
+                  href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[18px] font-avenir leading-[1.38] p-[18px] rounded-[50px]"
                 >
                   Let's go!
