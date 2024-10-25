@@ -70,6 +70,13 @@ const testimonials = [
       "The hands-on experience I gained through Student Paddy gave me the practical skills I needed to land my first job. It was a pivotal moment in my career journey.",
     image: "/images/picture-fuad-adegoke.png",
   },
+  {
+    name: "Chidera Igboanugo",
+    role: "English Student",
+    feedback:
+      "The shadowing program was a game-changer for me. It opened doors to my first internship.",
+    image: "/images/picture-chidera-igboanugo.png",
+  },
 ];
 
 const TestimonialCarousel = () => {
@@ -93,14 +100,14 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
         <OpenQuotation />
         <h2>Testimonials</h2>
         <CloseQuotation />
       </div>
 
-      <div className="relative px-[40px]">
+      <div className="relative px-[40px] mt-[80px]">
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
@@ -116,17 +123,26 @@ const TestimonialCarousel = () => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {testimonials.map((testimonial, index) => (
-              <div className="w-1/3 p-[1.4%] flex-shrink-0" key={index}>
-                <div className="bg-white rounded-[4px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center h-full">
-                  <img src={testimonial.image} alt={testimonial.name} />
-                  <div className="px-[3%] pt-[24px] pb-[14px]">
+              <div className="w-1/3 px-[1.4%] flex-shrink-0" key={index}>
+                <div className="bg-white rounded-[4px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center h-full flex flex-col">
+                  {/* <img src={testimonial.image} alt={testimonial.name} /> */}
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={1050}
+                    height={1003}
+                    className="h-[min(24vw,480px)] object-cover"
+                  />
+                  <div className="px-[3%] pt-[24px] pb-[14px] grow flex flex-col justify-between">
                     <p className="font-[500] text-[16px] font-avenir italic leading-[1.8]">{`"${testimonial.feedback}"`}</p>
-                    <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[38px]">
-                      {testimonial.name}
-                    </p>
-                    <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[11px]">
-                      {testimonial.role}
-                    </p>
+                    <div>
+                      <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[38px]">
+                        {testimonial.name}
+                      </p>
+                      <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[11px]">
+                        {testimonial.role}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -150,15 +166,15 @@ const TestimonialCarousel = () => {
           (_, index) => (
             <span
               key={index}
-              className={`h-3 w-3 mx-2 rounded-full cursor-pointer ${
-                currentIndex === index ? "bg-gray-800" : "bg-gray-400"
+              className={`h-[10.5px] w-[10.5px] mx-[6px] rounded-full cursor-pointer ${
+                currentIndex === index ? "bg-[#FFFFFF]" : "bg-[#9DB0A3]"
               }`}
               onClick={() => goToSlide(index)}
-            ></span>
+            />
           )
         )}
       </div>
-    </div>
+    </>
   );
 };
 
