@@ -12,7 +12,7 @@ const HigherInstitution = () => {
         {/*pb-[5vw] is to maintain slicing of image as image moves horizontally with screen width. 100vw*tan(6)=10.52vw would have kept the image completely safe*/}
 
         <div className="w-[min(86%,1800px)] mx-auto flex gap-[5%]">
-          <div className="w-[min(50%,760px)] pb-[10px]">
+          <div className="w-[min(50%,760px)] pb-[30px]">
             <h1
               className="text-[#474747]
                   font-[800] text-[56px] font-avenir leading-[1.375]"
