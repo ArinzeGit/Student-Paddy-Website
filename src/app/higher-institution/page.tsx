@@ -1,68 +1,11 @@
 "use client";
+import LogosMarquee from "@/components/LogosMarquee";
 import CloseQuotation from "@/components/svg-components/CloseQuotation";
 import OpenQuotation from "@/components/svg-components/OpenQuotation";
 import Image from "next/image";
 import Link from "next/link";
 
 const HigherInstitution = () => {
-  const handleLogoLoad = () => {
-    //mainly for setting the width of the logo container otherwise it would be 100% because of flex
-    const container = document.getElementById("logo-container");
-
-    if (container) {
-      const logos = container.querySelectorAll(".marquee-logo");
-
-      let totalWidth = 0;
-
-      logos.forEach((logo) => {
-        const imgElement = logo as HTMLImageElement;
-        const width = imgElement.offsetWidth;
-        console.log("Logo width:", width);
-        totalWidth += width;
-      });
-
-      totalWidth += 200 * (logos.length - 1); // Add 200px gaps
-      console.log("Total width:", totalWidth);
-      container.style.width = `${totalWidth}px`;
-
-      const animationDuration = totalWidth / 150;
-      container.style.animation = `scroll ${animationDuration}s linear infinite`;
-    }
-  };
-  //   //mainly for setting the width of the logo container otherwise it would be 100% because of flex
-
-  //   const container = document.getElementById("logo-container");
-
-  //   // Check if the container is not null
-  //   if (container) {
-  //     const logos = container.querySelectorAll(".logo"); // Get all logos
-
-  //     setTimeout(() => {
-  //       let totalWidth = 0;
-
-  //       logos.forEach((logo) => {
-  //         const imgElement = logo as HTMLImageElement;
-
-  //         const width = imgElement.offsetWidth;
-  //         console.log("Logo width:", width); // Log each logo's width
-  //         totalWidth += width;
-  //       });
-
-  //       totalWidth += 200 * (logos.length - 1); //add the 200px gaps
-  //       console.log("Total width:", totalWidth);
-  //       // Set the container width to match the total logos width
-
-  //       container.style.width = `${totalWidth}px`;
-  //       // Apply animation based on the total width
-  //       const animationDuration = totalWidth / 150;
-  //       container.style.animation = `scroll ${animationDuration}s linear infinite`;
-
-  //       // Set the containers to visible once width is set
-  //       // setIsLoaded(true);
-  //     }, 0); // Using a small timeout to ensure images are rendered
-  //   }
-  // }, []);
-
   return (
     <div>
       <div className="bg-white pt-[57px] pb-[5vw] ">
@@ -110,9 +53,12 @@ const HigherInstitution = () => {
               .
             </p>
             <div className="w-[85%]">
-              <button className="mt-[52px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
+              <Link
+                href={"/contact-us"}
+                className="mt-[52px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
+              >
                 Book a Demo
-              </button>
+              </Link>
               <div className="flex justify-between items-center gap-[5px] mt-[44px]">
                 <Link href={""} className="w-[44%]">
                   <Image
@@ -367,9 +313,12 @@ const HigherInstitution = () => {
                 quarterly.
               </p>
 
-              <button className="mt-[63px] bg-[#0F7863] w-full text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]">
+              <Link
+                href={"/contact-us"}
+                className="mt-[63px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
+              >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -386,209 +335,7 @@ const HigherInstitution = () => {
 
       <div className="bg-white py-[calc(10.52vw+32px)]">
         {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 32px is the extra padding away from slant section */}
-        <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
-          <OpenQuotation />
-          <h2>
-            Support <span className="text-[#474747]">&</span> Recognition
-          </h2>
-          <CloseQuotation />
-        </div>
-
-        <div className="mt-[4px] overflow-hidden">
-          <div
-            id="logo-container"
-            className="flex items-center gap-[200px] relative my-[50px]"
-          >
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-unilag.png"}
-              width={248}
-              height={233}
-              alt="Unilag logo"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-cmu-africa.png"}
-              width={227}
-              height={191}
-              alt="Carnegie Mellon University"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-al-ak-uni.png"}
-              width={256}
-              height={206}
-              alt="Al Akhawayn University"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-sand-tech.png"}
-              width={313}
-              height={163}
-              alt="Sand Technologies"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-afara.png"}
-              width={289}
-              height={183}
-              alt="The Afara Initiative"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-gsv-cup.png"}
-              width={338}
-              height={176}
-              alt="GSV Cup Elite 200"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-microsoft-founders.png"}
-              width={379}
-              height={107}
-              alt="Microsoft for Startups Founders Hub"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-safebridge.png"}
-              width={435}
-              height={161}
-              alt="SafeBridge"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-nvidia.png"}
-              width={213}
-              height={161}
-              alt="Nvidia"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-undp.png"}
-              width={301}
-              height={147}
-              alt="UNDP"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-alx.png"}
-              width={250}
-              height={185}
-              alt="alx ventures"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo"
-              src={"/images/logo-reliance.png"}
-              width={371}
-              height={131}
-              alt="Reliance Infosystems"
-            />
-            <Image
-              onLoad={handleLogoLoad}
-              className="marquee-logo w-[306px]"
-              src={"/images/logo-ikedi.jpg"}
-              width={459}
-              height={164}
-              alt="ikedi"
-            />
-            <div
-              id="duplicate-logos"
-              className="flex items-center gap-[200px] absolute top-0 left-[calc(100%+200px)]"
-            >
-              <Image
-                src={"/images/logo-unilag.png"}
-                width={248}
-                height={233}
-                alt="Unilag logo"
-              />
-              <Image
-                src={"/images/logo-cmu-africa.png"}
-                width={227}
-                height={191}
-                alt="Carnegie Mellon University"
-              />
-              <Image
-                src={"/images/logo-al-ak-uni.png"}
-                width={256}
-                height={206}
-                alt="Al Akhawayn University"
-              />
-              <Image
-                src={"/images/logo-sand-tech.png"}
-                width={313}
-                height={163}
-                alt="Sand Technologies"
-              />
-              <Image
-                src={"/images/logo-afara.png"}
-                width={289}
-                height={183}
-                alt="The Afara Initiative"
-              />
-              <Image
-                src={"/images/logo-gsv-cup.png"}
-                width={338}
-                height={176}
-                alt="GSV Cup Elite 200"
-              />
-              <Image
-                src={"/images/logo-microsoft-founders.png"}
-                width={379}
-                height={107}
-                alt="Microsoft for Startups Founders Hub"
-              />
-              <Image
-                src={"/images/logo-safebridge.png"}
-                width={435}
-                height={161}
-                alt="SafeBridge"
-              />
-              <Image
-                src={"/images/logo-nvidia.png"}
-                width={213}
-                height={161}
-                alt="Nvidia"
-              />
-              <Image
-                src={"/images/logo-undp.png"}
-                width={301}
-                height={147}
-                alt="UNDP"
-              />
-              <Image
-                src={"/images/logo-alx.png"}
-                width={250}
-                height={185}
-                alt="alx ventures"
-              />
-              <Image
-                src={"/images/logo-reliance.png"}
-                width={371}
-                height={131}
-                alt="Reliance Infosystems"
-              />
-              <Image
-                className="w-[306px]"
-                src={"/images/logo-ikedi.jpg"}
-                width={459}
-                height={164}
-                alt="ikedi"
-              />
-            </div>
-          </div>
-        </div>
+        <LogosMarquee />
       </div>
 
       <div className="bg-[#ECF3F1] relative z-[0] pt-[20px] pb-[90px]">
@@ -657,9 +404,12 @@ const HigherInstitution = () => {
           <p className="text-[#474747] font-[900] text-[30px] font-avenir leading-[1.16]">
             Want to know more? Reach out to us today!
           </p>
-          <button className="bg-[#5D4C80] rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]">
+          <Link
+            href={"/contact-us"}
+            className="bg-[#5D4C80] block rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[16px] font-avenir leading-[1.125]"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </div>
