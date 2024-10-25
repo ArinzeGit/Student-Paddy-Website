@@ -1,3 +1,6 @@
+"use client";
+import LogosMarquee from "@/components/LogosMarquee";
+import RealTimeClock from "@/components/RealTimeClock";
 import CloseQuotation from "@/components/svg-components/CloseQuotation";
 import OpenQuotation from "@/components/svg-components/OpenQuotation";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
@@ -9,9 +12,7 @@ const Home = () => {
     <div>
       <div className="bg-[#0F7863] pt-[46px] pb-[114px]">
         <div className="w-[min(86%,1800px)] mx-auto">
-          <p className="text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.365]">
-            Today, Oct 13 2024, 9:43:44 PM
-          </p>
+          <RealTimeClock />
 
           <div className="flex gap-[23px] mt-[38px]">
             <div className="bg-[white] rounded-[8px] py-[55px] px-[20px] font-avenir flex justify-center items-center relative flex-1">
@@ -290,19 +291,33 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#0F7863] relative z-[0] py-[20px] border border-b-[red]">
+      <div className="bg-[#0F7863] relative z-[0] py-[85px]">
         <div className="absolute top-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-top-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
           <div className="absolute top-[-1px] left-[calc(46vw+60px)] w-[min(44vw,750px)] ">
             {/* left and w are such that the mark is identical to the first mark in higher-institution page (beneath the picture of two students). The reason for the values is there*/}
+            <div className=" h-[min(1.5vw,20px)] bg-[#ECF3F1]" />
+            <div className="h-[min(1.5vw,20px)] bg-[#ECF3F1] mt-[min(1.87vw,25px)]" />
+          </div>
+        </div>
+
+        <div className="w-[min(90%,1800px)] mx-auto">
+          <TestimonialCarousel />
+        </div>
+
+        <div className="absolute bottom-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[6deg] origin-bottom-left z-[-1]">
+          {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
+          <div className="absolute bottom-[-1px] right-[calc(46vw+60px)] w-[min(44vw,750px)] ">
+            {/* right and w are such that the mark is identical to the first mark in higher-institution page (beneath the picture of two students). The reason for the values is there*/}
             <div className=" h-[min(1.5vw,20px)] bg-white" />
             <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
           </div>
         </div>
+      </div>
 
-        <div className="w-[min(86%,1800px)] mx-auto">
-          <TestimonialCarousel />
-        </div>
+      <div className="bg-white pt-[calc(10.52vw+32px)] pb-[32px]">
+        {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 32px is an extra padding away from slant section */}
+        <LogosMarquee />
       </div>
     </div>
   );
