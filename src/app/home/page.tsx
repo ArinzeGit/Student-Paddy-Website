@@ -1,11 +1,16 @@
 "use client";
 import LogosMarquee from "@/components/LogosMarquee";
-import RealTimeClock from "@/components/RealTimeClock";
 import CloseQuotation from "@/components/svg-components/CloseQuotation";
 import OpenQuotation from "@/components/svg-components/OpenQuotation";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+// Import the `RealTimeClock` component dynamically, with SSR disabled
+const RealTimeClock = dynamic(() => import("../../components/RealTimeClock"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
