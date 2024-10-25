@@ -15,7 +15,11 @@ const Footer = () => {
           Unlocking Talent, Empowering Students
         </p>
         <div className="flex gap-[24px] mt-[42px]">
-          <Link href="">
+          <Link
+            href="https://www.linkedin.com/company/student-paddy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/images/icon-linkedin.svg"
               width={"27"}
@@ -23,7 +27,11 @@ const Footer = () => {
               alt="LinkedIn"
             />
           </Link>
-          <Link href="">
+          <Link
+            href="https://instagram.com/studentpaddy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/images/icon-instagram.svg"
               width={"26"}
@@ -31,7 +39,11 @@ const Footer = () => {
               alt="Instagram"
             />
           </Link>
-          <Link href="">
+          <Link
+            href="https://twitter.com/studentpaddy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/images/icon-twitter.svg"
               width={"26"}
@@ -39,7 +51,11 @@ const Footer = () => {
               alt="Twitter"
             />
           </Link>
-          <Link href="">
+          <Link
+            href="https://www.facebook.com/groups/664738504285654"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/images/icon-facebook.svg"
               width={"25"}
@@ -82,10 +98,20 @@ const Footer = () => {
 
         <div className="flex flex-col gap-[33px]">
           <p className="font-[800] text-[20px]">Download</p>
-          <Link href="" className="font-[400] text-[16px]">
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.paddy_bare"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-[400] text-[16px]"
+          >
             Android
           </Link>
-          <Link href="" className="font-[400] text-[16px]">
+          <Link
+            href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-[400] text-[16px]"
+          >
             IOS
           </Link>
         </div>
