@@ -19,7 +19,12 @@ const config: Config = {
       },
       letterSpacing:{
         '1': '0.01em',
-      }
+      },
+      screens: {
+        small: '670px',
+        medium: '890px',
+        large: '1000px',
+      },
     },
   },
   plugins: [function ({ addUtilities }:PluginAPI) {

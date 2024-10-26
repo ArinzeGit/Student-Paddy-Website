@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="px-[7%] pt-[60px] pb-[50px] bg-[#0F7863] flex justify-between">
-      <div>
+    <div className="px-[7%] pt-[60px] pb-[50px] bg-[#0F7863] flex large:justify-between flex-col-reverse large:flex-row gap-[100px] large:gap-0">
+      <div className="flex flex-col items-center large:items-start">
         <Image
           src="/images/logo-student-paddy-white.svg"
           width={"227"}
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-[#FFFFFF] font-avenir leading-[1.37] flex gap-[80px]">
+      <div className="text-[#FFFFFF] font-avenir leading-[1.37] flex gap-[80px] justify-between large:justify-start">
         <div className="flex flex-col gap-[33px]">
           <p className="font-[800] text-[20px]">Company</p>
           <Link href="/home" className="font-[400] text-[16px]">

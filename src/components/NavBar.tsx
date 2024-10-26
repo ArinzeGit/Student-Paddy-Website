@@ -16,7 +16,7 @@ const NavBar = () => {
         <NavLink label="Higher Institution" href="/higher-institution" />
         <NavLink label="Contact Us" href="/contact-us" />
       </div>
-      <div className="flex gap-[19px]">
+      <div className="hidden large:flex large:gap-[19px] ">
         <Link
           href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
           target="_blank"

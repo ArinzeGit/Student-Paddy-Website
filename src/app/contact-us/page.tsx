@@ -55,15 +55,15 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-[62px] pb-[120px]">
-      <h1 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59] text-center">
+    <div className="pt-[62px] pb-[120px] w-[min(628px,82%)] mx-auto">
+      <h1 className="text-[#0F7863] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.59] text-center">
         Contact Us
       </h1>
       <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] text-center mt-[27px]">
         Get in touch and we’ll respond to your inquiries in a timely manner!
       </p>
 
-      <div className="max-w-[628px] mx-auto p-[30px] border-[0.4px] border-[#98B0A9] rounded-[4px] mt-[42px]">
+      <div className="p-[30px] border-[0.4px] border-[#98B0A9] rounded-[4px] mt-[42px]">
         <form onSubmit={handleSubmit}>
           <div>
             <select
@@ -142,7 +142,7 @@ const ContactUs = () => {
           <div className="text-center mt-[56px]">
             <button
               type="submit"
-              className="px-[44px] py-[18px] text-white font-[900] text-[16px] font-avenir leading-[1.125] bg-[#5D4C80] rounded-full focus:outline-none active:ring-4 active:ring-purple-300"
+              className="px-[44px] py-[18px] text-white font-[900] text-[min(16px,calc(0.2vw+13.12px))] font-avenir leading-[1.125] bg-[#5D4C80] rounded-full focus:outline-none active:ring-4 active:ring-purple-300"
             >
               Submit
             </button>

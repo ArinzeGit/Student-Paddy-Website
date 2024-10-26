@@ -111,7 +111,7 @@ const LogosMarquee = () => {
 
   return (
     <>
-      <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
+      <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[min(44px,calc(1.7vw+19.52px))] large:text-[44px] font-avenir leading-[1.6] justify-center items-center">
         <OpenQuotation />
         <h2>
           Support <span className="text-[#474747]">&</span> Recognition
@@ -133,6 +133,7 @@ const LogosMarquee = () => {
               width={logo.width}
               height={logo.height}
               alt={logo.name}
+              loading="eager"
             />
           ))}
 
