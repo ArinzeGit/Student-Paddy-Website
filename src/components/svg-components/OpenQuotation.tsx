@@ -1,8 +1,7 @@
 const OpenQuotation = () => {
   return (
     <svg
-      width="61"
-      height="93"
+      className="w-[clamp(29px,calc(3vw+17.7px),61px)]"
       viewBox="0 0 61 93"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
