@@ -8,21 +8,21 @@ import Link from "next/link";
 const HigherInstitution = () => {
   return (
     <div>
-      <div className="bg-white pt-[57px] pb-[2vw] large:pb-[5vw] ">
+      <div className="bg-white pt-[40px] tablet:pt-[57px] pb-0 tablet:pb-[2vw] desktop:pb-[5vw] ">
         {/*pb-[5vw] is to maintain slicing of image as image moves horizontally with screen width. 100vw*tan(6)=10.52vw would have kept the image completely safe*/}
 
-        <div className="w-[min(86%,1800px)] mx-auto block large:flex large:gap-[5%]">
-          <div className="large:w-[min(50%,760px)] pb-[30px]">
+        <div className="w-[min(86%,1800px)] mx-auto block desktop:flex desktop:gap-[5%]">
+          <div className="desktop:w-[min(50%,760px)] pb-[30px]">
             <h1
               className="text-[#474747]
-                  font-[800] text-[4.5vw] large:text-[min(56px,calc(3.8vw+1.28px))] font-avenir leading-[1.375]"
+                  font-[800] text-[max(calc(6vw+7.5px),22px)] tablet:text-[4.5vw] desktop:text-[min(56px,calc(3.8vw+1.28px))] font-avenir leading-[1.3] tablet:leading-[1.375]"
             >
-              Unlocking Talent,{" "}
+              Unlocking Talent, <br className="block tablet:hidden" />
               <span className="text-[#0F7863]">Empowering Students</span>
             </h1>
             <p
               className="text-[#474747]
-                  font-[400] text-[20px] font-avenir leading-[1.75] mt-[36px]"
+                  font-[400] text-[clamp(15px,calc(1.5vw+9.2px),20px)] font-avenir leading-[2] tablet:leading-[1.75] mt-[20px] tablet:mt-[36px]"
             >
               At{" "}
               <span className="text-[#0F7863] font-[800]">Student Paddy</span>,
@@ -52,14 +52,14 @@ const HigherInstitution = () => {
               </span>
               .
             </p>
-            <div className="large:w-[85%]">
+            <div className="desktop:w-[85%]">
               <Link
                 href="/contact-us"
-                className="mt-[52px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
+                className="mt-[20px] tablet:mt-[52px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[clamp(15px,calc(1.5vw+9.2px),23px)] font-avenir leading-[1.2] tablet:leading-[1] p-[max(14px,3vw)] tablet:p-[27.5px] rounded-[50px]"
               >
                 Book a Demo
               </Link>
-              <div className="flex justify-between items-center gap-[5px] mt-[44px]">
+              <div className="flex justify-between items-center gap-[5px] mt-[30px] tablet:mt-[44px]">
                 <Link
                   href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
                   target="_blank"
@@ -92,7 +92,7 @@ const HigherInstitution = () => {
             </div>
           </div>
 
-          <div className="mx-auto large:mx-0 w-[80%] large:w-[min(50%,650px)] large:self-end large:mt-[0] mt-[50px]">
+          <div className="mx-auto desktop:mx-0 w-[100%] tablet:w-[80%] desktop:w-[min(50%,650px)] desktop:self-end mt-[0] tablet:mt-[50px] desktop:mt-[0] ">
             <Image
               src="/images/picture-two-students.png"
               width={2781}
@@ -103,10 +103,10 @@ const HigherInstitution = () => {
         </div>
       </div>
 
-      <div className="bg-[#0F7863] relative z-[1] pt-[50px] large:pt-[20px] pb-[20px]">
+      <div className="bg-[#0F7863] relative z-[1] pt-[50px] pb-[20px]">
         <div className="absolute top-0 left-0 w-full h-[10.6vw] bg-[#0F7863] transform skew-y-[-6deg] origin-top-left z-[-1]">
           {/* h is precisely calculated to make sure the slant section reaches down to the main section as screen gets wider 100vw*tan(6)=10.52vw*/}
-          <div className="absolute top-[-1px] left-0 large:left-[calc(46vw+60px)] w-full large:w-[min(44vw,750px)] ">
+          <div className="absolute top-[-1px] left-0 desktop:left-[calc(46vw+60px)] w-full desktop:w-[min(44vw,750px)] ">
             {/* left and w are such that the marks stay like an underline for the image above it and follow it as screen gets wider*/}
             <div className=" h-[min(1.5vw,20px)] bg-white" />
             <div className="h-[min(1.5vw,20px)] bg-white mt-[min(1.87vw,25px)]" />
@@ -114,52 +114,60 @@ const HigherInstitution = () => {
         </div>
 
         <div className="w-[min(86%,1800px)] mx-auto">
-          <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
+          <div className="flex gap-[2%] tablet:gap-[6%] text-[#FFFFFF] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[3.6] tablet:leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Up-skilling & Networking</h2>
             <CloseQuotation />
           </div>
 
-          <div className="text-[#FFFFFF] font-[400] text-[20px] font-avenir leading-[1.75] text-center grid grid-cols-2 large:flex large:justify-between mt-[42px] large:mt-[31px] justify-items-center gap-y-[50px]">
-            <div className="large:w-[18%] w-[80%]">
+          <div className="text-[#FFFFFF] font-[400] text-[clamp(15px,calc(1.5vw+9.2px),20px)] font-avenir leading-[1.75] text-center grid grid-cols-1 tablet:grid-cols-2 justify-items-center gap-y-[50px] desktop:flex desktop:justify-between mt-[16px] tablet:mt-[42px] desktop:mt-[31px]">
+            <div className="w-[max(230px,60%)] tablet:w-[80%] desktop:w-[18%]">
               <Image
                 src="/images/iphone-upskilling-hours.png"
                 width={691}
                 height={1377}
                 alt="Iphone screenshot"
               />
-              <p className="mt-[37px]">Keep track of up-skilling hours</p>
+              <p className="mt-[20px] tablet:mt-[37px]">
+                Keep track of up-skilling hours
+              </p>
             </div>
-            <div className="large:w-[18%] w-[80%]">
+            <div className="w-[max(230px,60%)] tablet:w-[80%] desktop:w-[18%]">
               <Image
                 src="/images/iphone-skill-based-content.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
               />
-              <p className="mt-[37px]">Stream skill-based content</p>
+              <p className="mt-[20px] tablet:mt-[37px]">
+                Stream skill-based content
+              </p>
             </div>
-            <div className="large:w-[18%] w-[80%]">
+            <div className="w-[max(230px,60%)] tablet:w-[80%] desktop:w-[18%]">
               <Image
                 src="/images/iphone-badges.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
               />
-              <p className="mt-[37px]">Earn badges stored on the blockchain</p>
+              <p className="mt-[20px] tablet:mt-[37px]">
+                Earn badges stored on the blockchain
+              </p>
             </div>
-            <div className="large:w-[18%] w-[80%]">
+            <div className="w-[max(230px,60%)] tablet:w-[80%] desktop:w-[18%]">
               <Image
                 src="/images/iphone-campus-peers.png"
                 width={687}
                 height={1377}
                 alt="Iphone screenshot"
               />
-              <p className="mt-[37px]">Connect with campus peers</p>
+              <p className="mt-[20px] tablet:mt-[37px]">
+                Connect with campus peers
+              </p>
             </div>
           </div>
 
-          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
+          <div className="flex gap-[2%] tablet:gap-[6%] mt-[50px] tablet:mt-[81px] text-[#FFFFFF] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[3.6] tablet:leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Talent Mining & Monitoring</h2>
             <CloseQuotation />
@@ -170,10 +178,10 @@ const HigherInstitution = () => {
             width={2925}
             height={1827}
             alt="Macbook screenshot"
-            className="w-[78%] mt-[42px] mx-auto"
+            className="w-[max(90%,260px)] tablet:w-[78%] mt-[10px] tablet:mt-[42px] mx-auto"
           />
 
-          <div className="flex gap-[6%] mt-[81px] text-[#FFFFFF] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
+          <div className="flex gap-[2%] tablet:gap-[6%] mt-[50px] tablet:mt-[81px] text-[#FFFFFF] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[3.6] tablet:leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Job Placement & Tracking</h2>
             <CloseQuotation />
@@ -184,7 +192,7 @@ const HigherInstitution = () => {
             width={2926}
             height={1827}
             alt="Macbook screenshot"
-            className="w-[78%] mt-[42px] mx-auto"
+            className="w-[max(90%,260px)] tablet:w-[78%] mt-[10px] tablet:mt-[42px] mx-auto"
           />
         </div>
 
@@ -198,12 +206,12 @@ const HigherInstitution = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECF3F1] relative z-[0] pt-[calc(10.52vw+43px)] pb-[50px] large:pb-[20px]">
+      <div className="bg-[#ECF3F1] relative z-[0] pt-[calc(10.52vw+43px)] pb-[50px] desktop:pb-[20px]">
         {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 43px is the extra padding away from slant section */}
         <div className="w-[min(86%,1800px)] mx-auto">
-          <div className="large:flex large:gap-[5%] large:items-center">
-            <div className="large:w-[45%]">
-              <h2 className="text-[#0F7863] font-[800] text-[33px] font-avenir leading-[1.67]">
+          <div className="desktop:flex desktop:gap-[5%] desktop:items-center">
+            <div className="desktop:w-[45%]">
+              <h2 className="text-[#0F7863] font-[800] text-[max(17px,5vw)] tablet:text-[33px] font-avenir leading-[1.67]">
                 Student Paddy{" "}
                 <span className="font-[500] text-[#474747]">is a</span>{" "}
                 productivity multiplier{" "}
@@ -218,9 +226,9 @@ const HigherInstitution = () => {
                 width={1872}
                 height={1827}
                 alt="Resume, rocket, building"
-                className="w-[80%] mx-auto large:hidden"
+                className="w-[80%] mx-auto desktop:hidden"
               />
-              <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] pt-[38px]">
+              <p className="text-[#474747] font-[400] text-[clamp(15px,calc(1.5vw+9.2px),20px)] font-avenir leading-[1.75] mt-[38px]">
                 Our{" "}
                 <span className="text-[#0F7863] font-[800]">
                   comprehensive approach
@@ -272,21 +280,21 @@ const HigherInstitution = () => {
               width={1872}
               height={1827}
               alt="Resume, rocket, building"
-              className="w-[50%] hidden large:block"
+              className="w-[50%] hidden desktop:block"
             />
           </div>
 
-          <div className="large:flex large:gap-[5%] large:items-center mt-[81px]">
+          <div className="desktop:flex desktop:gap-[5%] desktop:items-center mt-[81px]">
             <Image
               src="/images/student-career-journey.png"
               width={1767}
               height={1767}
               alt="Student career journey"
-              className="w-[80%] large:w-[50%] mx-auto large:mx-0"
+              className="w-[80%] desktop:w-[50%] mx-auto desktop:mx-0"
             />
 
-            <div className="large:w-[45%] large:mt-0 mt-[80px]">
-              <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[min(44px,calc(1.7vw+19.52px))] large:text-[min(3vw,44px)] font-avenir leading-[1.6] justify-center items-center">
+            <div className="desktop:w-[45%] desktop:mt-0 mt-[80px]">
+              <div className="flex gap-[2%] tablet:gap-[6%] text-[#0F7863] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] desktop:text-[min(3vw,44px)] font-avenir leading-[1.6] justify-center items-center">
                 <OpenQuotation />
                 <h2>
                   Partner <span className="text-[#474747]">with Us</span>
@@ -294,7 +302,7 @@ const HigherInstitution = () => {
                 <CloseQuotation />
               </div>
 
-              <p className="text-[#474747] font-[400] text-[20px] font-avenir leading-[1.75] pt-[38px]">
+              <p className="text-[#474747] font-[400] text-[clamp(15px,calc(1.5vw+9.2px),20px)] font-avenir leading-[1.75] pt-[38px]">
                 Our
                 <span className="text-[#0F7863] font-[800]">
                   {" "}
@@ -332,7 +340,7 @@ const HigherInstitution = () => {
 
               <Link
                 href="/contact-us"
-                className="mt-[63px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[23px] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
+                className="mt-[63px] block bg-[#0F7863] text-center text-[#FFFFFF] font-[500] text-[clamp(15px,calc(1.5vw+9.2px),23px)] font-avenir leading-[1] p-[27.5px] rounded-[50px]"
               >
                 Contact Us
               </Link>
@@ -366,13 +374,13 @@ const HigherInstitution = () => {
         </div>
 
         <div className="w-[min(86%,1800px)] mx-auto">
-          <div className="flex gap-[6%] text-[#0F7863] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
+          <div className="flex gap-[2%] tablet:gap-[6%] text-[#0F7863] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
             <OpenQuotation />
             <h2>Publications</h2>
             <CloseQuotation />
           </div>
 
-          <ol className="text-[#0F7863] font-[500] text-[25px] large:text-[30px] font-avenir italic leading-[1.8] list-decimal list-inside space-y-[27px] mt-[56px]">
+          <ol className="text-[#0F7863] font-[500] text-[clamp(15px,calc(1.5vw+10.2px),30px)] font-avenir italic leading-[1.8] list-decimal list-inside space-y-[27px] mt-[56px]">
             <li>
               <Link href="" className="underline">
                 University of Lagos signs MOU with Student Paddy - Vanguard News
@@ -416,14 +424,14 @@ const HigherInstitution = () => {
         </div>
       </div>
 
-      <div className="bg-[#FFFFFF] pt-[94px] pb-[90px]">
-        <div className="bg-[#E9E4F3] w-[min(86%,1800px)] mx-auto px-[4%] py-[25px] large:py-[58px] flex justify-between items-center">
-          <p className="text-[#474747] font-[900] text-[min(30px,calc(1.5vw+8.4px))] font-avenir leading-[1.16]">
+      <div className="bg-[#FFFFFF] py-[38px] tablet:py-[92px]">
+        <div className="bg-[#E9E4F3] w-[min(86%,1800px)] mx-auto px-[4%] py-[25px] desktop:py-[58px] flex justify-between items-center">
+          <p className="text-[#474747] font-[900] text-[clamp(14px,calc(1.5vw+8.4px),30px)] font-avenir leading-[1.16]">
             Want to know more? Reach out to us today!
           </p>
           <Link
             href="/contact-us"
-            className="bg-[#5D4C80] block rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[min(16px,calc(0.2vw+13.12px))] font-avenir leading-[1.125] shrink-0 ml-[5%]"
+            className="bg-[#5D4C80] block rounded-[50px] px-[44px] py-[18px] text-[#FFFFFF] font-[900] text-[clamp(13px,calc(0.2vw+13.12px),16px)] font-avenir leading-[1.125] shrink-0 ml-[5%]"
           >
             Contact Us
           </Link>

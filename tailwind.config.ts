@@ -21,9 +21,8 @@ const config: Config = {
         '1': '0.01em',
       },
       screens: {
-        small: '670px',
-        medium: '890px',
-        large: '1000px',
+        tablet: '700px',
+        desktop: '1000px',
       },
     },
   },

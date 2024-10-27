@@ -101,7 +101,7 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-      <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.6] justify-center items-center">
+      <div className="flex gap-[6%] text-[#FFFFFF] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.6] justify-center items-center">
         <OpenQuotation />
         <h2>Testimonials</h2>
         <CloseQuotation />
