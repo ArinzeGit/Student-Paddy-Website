@@ -77,9 +77,9 @@ const logos = [
   },
   {
     name: "Ikedi",
-    width: 459,
-    height: 164,
-    src: "/images/logo-ikedi.jpg",
+    width: 360,
+    height: 117,
+    src: "/images/logo-ikedi.png",
   },
 ];
 
