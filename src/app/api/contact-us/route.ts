@@ -3,9 +3,11 @@ import nodemailer from "nodemailer";
 
 // Configure Nodemailer transport
 const transporter = nodemailer.createTransport({
-  service: "outlook",
+  host: "smtp.office365.com",
+  port: 587,
+  secure: false,
   auth: {
-    user: "no-reply@studentpaddy.com", 
+    user: "no-reply@studentpaddy.com",
     pass: process.env.EMAIL_PASSWORD,
   },
 });
