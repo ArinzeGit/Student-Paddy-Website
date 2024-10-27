@@ -96,12 +96,12 @@ const LogosMarquee = () => {
       firstSetOfLogos.forEach((logo) => {
         const imgElement = logo as HTMLImageElement;
         const width = imgElement.offsetWidth;
-        console.log("Logo width:", width);
+        // console.log("Logo width:", width);
         totalWidth += width;
       });
 
       totalWidth += 200 * (firstSetOfLogos.length - 1); // Add 200px gaps
-      console.log("Total width:", totalWidth);
+      // console.log("Total width:", totalWidth);
       container.style.width = `${totalWidth}px`;
 
       const animationDuration = totalWidth / 150;
