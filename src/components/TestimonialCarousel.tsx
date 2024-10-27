@@ -130,7 +130,7 @@ const TestimonialCarousel = () => {
                     alt={testimonial.name}
                     width={1050}
                     height={1003}
-                    className="h-[min(24vw,480px)] object-cover"
+                    className="h-[min(24vw,480px)] object-cover rounded-t-[4px]"
                   />
                   <div className="px-[3%] pt-[24px] pb-[14px] grow flex flex-col justify-between">
                     <p className="font-[500] text-[16px] font-avenir italic leading-[1.8]">{`"${testimonial.feedback}"`}</p>
