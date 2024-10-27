@@ -51,18 +51,6 @@ const Footer = () => {
               alt="Twitter"
             />
           </Link>
-          <Link
-            href="https://www.facebook.com/groups/664738504285654"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/icon-facebook.svg"
-              width={"25"}
-              height={"25"}
-              alt="Facebook"
-            />
-          </Link>
         </div>
       </div>
 
