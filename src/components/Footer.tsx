@@ -54,8 +54,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-[#FFFFFF] font-avenir leading-[1.37] flex flex-col text-center tablet:text-left  tablet:flex-row justify-between desktop:justify-start gap-y-[70px] gap-x-[80px]">
-        <div className="flex flex-col gap-[33px]">
+      <div className="text-[#FFFFFF] font-avenir leading-[1.37] flex flex-col tablet:flex-row items-center tablet:items-start justify-between gap-y-[70px] gap-x-[80px]">
+        <div className="flex flex-col gap-[33px] items-center tablet:items-start">
           <p className="font-[800] text-[20px]">Company</p>
           <Link href="/home" className="font-[400] text-[16px]">
             Home
@@ -71,7 +71,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-[33px]">
+        <div className="flex flex-col gap-[33px] items-center tablet:items-start">
           <p className="font-[800] text-[20px]">Legal</p>
           <Link href="" className="font-[400] text-[16px]">
             Privacy Policy
@@ -84,7 +84,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-[33px]">
+        <div className="flex flex-col gap-[33px] items-center tablet:items-start">
           <p className="font-[800] text-[20px]">Download</p>
           <Link
             href="https://play.google.com/store/apps/details?id=com.paddy_bare"
