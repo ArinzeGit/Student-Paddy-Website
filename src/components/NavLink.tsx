@@ -7,15 +7,17 @@ import Link from "next/link";
 interface NavLinkProps {
   label: string;
   href: string;
+  onClick: () => void;
 }
 
-const NavLink = ({ label, href }: NavLinkProps) => {
+const NavLink = ({ label, href, onClick }: NavLinkProps) => {
   const pathname = usePathname();
   const isActive = pathname.startsWith(href);
 
   return (
     <div className="flex flex-col items-center space-y-[15px] transition-colors duration-300 ease-in-out">
       <Link
+        onClick={onClick}
         href={href}
         className={`${
           isActive ? "text-[#0F7863] " : "text-[#474747]"

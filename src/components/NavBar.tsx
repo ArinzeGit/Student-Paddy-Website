@@ -1,21 +1,45 @@
+"use client";
 import Image from "next/image";
 import NavLink from "./NavLink";
 import Link from "next/link";
+import { useState } from "react";
+import HamburgerButton from "./HamburgerButton";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="w-[min(86%,1800px)] min-h-[100px] mx-auto flex items-center justify-between">
+    <div className="w-[min(86%,1800px)] min-h-[100px] mx-auto flex items-center justify-between relative">
       <Image
         src="/images/logo-student-paddy.svg"
         width={184}
         height={53}
         alt="Student paddy logo"
+        className="z-[11]"
       />
-      <div className="flex self-end">
-        <NavLink label="Home" href="/home" />
-        <NavLink label="Higher Institution" href="/higher-institution" />
-        <NavLink label="Contact Us" href="/contact-us" />
+
+      <div
+        className={`fixed tablet:static inset-0 z-10 bg-white tablet:bg-transparent bg-opacity-70 backdrop-blur-md flex flex-col tablet:flex-row justify-center items-center gap-y-6 tablet:self-end ${
+          isOpen ? "animate-slideIn1" : "animate-slideOut1" //there is slideIn, slideIn1, slideIn2 and slideIn3. Find out which one CEO prefers
+        } tablet:animate-none`}
+      >
+        <NavLink label="Home" href="/home" onClick={() => setIsOpen(false)} />
+        <NavLink
+          label="Higher Institution"
+          href="/higher-institution"
+          onClick={() => setIsOpen(false)}
+        />
+        <NavLink
+          label="Contact Us"
+          href="/contact-us"
+          onClick={() => setIsOpen(false)}
+        />
       </div>
+
       <div className="hidden desktop:flex desktop:gap-[19px] ">
         <Link
           href="https://apps.apple.com/ng/app/student-paddy-digital-campus/id6444663470"
@@ -41,6 +65,10 @@ const NavBar = () => {
             alt="Google play download"
           />
         </Link>
+      </div>
+
+      <div className="absolute top-[50%] translate-y-[-50%] right-0 z-[11] tablet:hidden">
+        <HamburgerButton onClick={toggleMenu} isOpen={isOpen} />
       </div>
     </div>
   );
