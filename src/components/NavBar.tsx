@@ -23,9 +23,11 @@ const NavBar = () => {
       />
 
       <div
-        className={`fixed tablet:static inset-0 z-10 bg-white tablet:bg-transparent bg-opacity-70 backdrop-blur-md flex flex-col tablet:flex-row justify-center items-center gap-y-6 tablet:self-end ${
-          isOpen ? "animate-slideIn1" : "animate-slideOut1" //there is slideIn, slideIn1, slideIn2 and slideIn3. Find out which one CEO prefers
-        } tablet:animate-none`}
+        className={`fixed tablet:static inset-0 z-10 bg-white tablet:bg-transparent bg-opacity-70 backdrop-blur-md flex flex-col tablet:flex-row justify-center items-center gap-y-6 tablet:self-end transition-[clip-path,opacity] duration-[400ms] ${
+          isOpen
+            ? "clip-path-circle-open opacity-100"
+            : "clip-path-circle-closed opacity-0"
+        } tablet:clip-path-none tablet:opacity-100`}
       >
         <NavLink label="Home" href="/home" onClick={() => setIsOpen(false)} />
         <NavLink
