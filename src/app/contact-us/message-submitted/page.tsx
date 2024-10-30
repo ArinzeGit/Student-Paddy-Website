@@ -9,13 +9,13 @@ const MessageSubmitted = () => {
   };
 
   return (
-    <div className="text-center pt-[91px] pb-[47px]">
-      <h2 className="text-[#0F7863] font-[500] text-[44px] font-avenir leading-[1.59]">
+    <div className="w-[min(86%,1800px)] mx-auto text-center pt-[91px] pb-[47px]">
+      <h2 className="text-[#0F7863] font-[500] text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.59]">
         We’ve received your submission!
       </h2>
       <button
         onClick={() => handleSubmit()}
-        className="px-[111px] py-[27.5px] text-white font-[500] text-[23px] font-avenir leading-[1] bg-[#0F7863] rounded-full focus:outline-none active:ring-4 active:ring-[#c9e0dc] mt-[41px]"
+        className="px-[27.5px] tablet:px-[111px] py-[27.5px] text-white font-[500] text-[clamp(15px,calc(1.5vw+9.2px),23px)] font-avenir leading-[1] bg-[#0F7863] rounded-full focus:outline-none active:ring-4 active:ring-[#c9e0dc] mt-[41px]"
       >
         Submit another response
       </button>
