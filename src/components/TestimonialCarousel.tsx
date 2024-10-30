@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CloseQuotation from "./svg-components/CloseQuotation";
 import OpenQuotation from "./svg-components/OpenQuotation";
 import Image from "next/image";
@@ -81,7 +81,21 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerSlide = 3;
+  const [cardsPerSlide, setCardsPerSlide] = useState(3);
+
+  // Set the number of cards per slide based on screen width
+  useEffect(() => {
+    const updateCardsPerSlide = () => {
+      setCardsPerSlide(
+        window.innerWidth < 700 ? 1 : window.innerWidth < 1000 ? 2 : 3
+      ); // Use 1 for mobile, 2 for tablet, 3 for desktop
+    };
+
+    updateCardsPerSlide();
+    window.addEventListener("resize", updateCardsPerSlide);
+
+    return () => window.removeEventListener("resize", updateCardsPerSlide);
+  }, []);
 
   const nextSlide = () => {
     if (currentIndex < testimonials.length / cardsPerSlide - 1) {
@@ -123,14 +137,18 @@ const TestimonialCarousel = () => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {testimonials.map((testimonial, index) => (
-              <div className="w-1/3 px-[1.4%] flex-shrink-0" key={index}>
+              <div
+                style={{ width: `${100 / cardsPerSlide}%` }}
+                className="px-[1.4%] flex-shrink-0"
+                key={index}
+              >
                 <div className="bg-white rounded-[4px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center h-full flex flex-col">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     width={1050}
                     height={1003}
-                    className="h-[min(24vw,480px)] object-cover rounded-t-[4px]"
+                    className="h-[72vw] tablet:h-[48vw] desktop:h-[min(24vw,502px)] object-cover rounded-t-[4px]"
                   />
                   <div className="px-[3%] pt-[24px] pb-[14px] grow flex flex-col justify-between">
                     <p className="font-[500] text-[16px] font-avenir italic leading-[1.8]">{`"${testimonial.feedback}"`}</p>
