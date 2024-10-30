@@ -89,6 +89,7 @@ const TestimonialCarousel = () => {
       setCardsPerSlide(
         window.innerWidth < 700 ? 1 : window.innerWidth < 1000 ? 2 : 3
       ); // Use 1 for mobile, 2 for tablet, 3 for desktop
+      setCurrentIndex(0); //in case the current index won't exist given the new cardsPerSlide
     };
 
     updateCardsPerSlide();
