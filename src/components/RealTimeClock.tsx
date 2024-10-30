@@ -28,7 +28,7 @@ const RealTimeClock = () => {
   };
 
   return (
-    <p className="text-[#FFFFFF] font-[500] text-[44px] font-avenir leading-[1.365]">
+    <p className="text-[#FFFFFF] font-[500] text-[max(17px,5vw)] tablet:text-[min(44px,calc(1.7vw+19.52px))] font-avenir leading-[1.365] text-center tablet:text-left">
       Today, {formatDate(currentTime)}
     </p>
   );
