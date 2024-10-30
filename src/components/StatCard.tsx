@@ -10,7 +10,7 @@ import Image from "next/image";
 const StatCard = ({ percentage, value, name, iconSrc }: Props) => {
   return (
     <div className="bg-[white] rounded-[8px] pt-[45px] pb-[5px] tablet:py-[55px] px-[20px] font-avenir flex justify-center items-center relative flex-1">
-      <div className="bg-[rgba(11,138,0,0.15)] rounded-[50px] py-0 desktop:py-[3px] px-[5px] absolute top-[19px] left-[50%] tablet:left-[31px]  translate-x-[-50%] tablet:translate-x-0">
+      <div className="bg-[rgba(11,138,0,0.15)] rounded-[50px] py-0 desktop:py-[3px] px-[5px] absolute top-[15px] tablet:top-[19px] left-[15px] tablet:left-[31px] ">
         <Image
           src="/images/icon-trending-up.svg"
           alt="Trending up"
