@@ -139,7 +139,7 @@ const TestimonialCarousel = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 style={{ width: `${100 / cardsPerSlide}%` }}
-                className="px-[1.4%] flex-shrink-0"
+                className="px-[max(1.4%,15px)] flex-shrink-0"
                 key={index}
               >
                 <div className="bg-white rounded-[4px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center h-full flex flex-col">
