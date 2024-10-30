@@ -89,7 +89,7 @@ const Home = () => {
       <div className="bg-[#ECF3F1] pt-[75px] pb-[calc(10.52vw+32px)]">
         {/* 100vw*tan(6)=10.52vw is to take care of encroaching slant section and 32px is an extra padding away from slant section */}
         <div className="w-[min(86%,1800px)] mx-auto flex flex-col gap-[100px] desktop:gap-[50px]">
-          <div className="flex flex-col desktop:flex-row gap-[5%] items-center">
+          <div className="flex flex-col desktop:flex-row gap-[40px] desktop:gap-[5%] items-center">
             <div className="flex items-start gap-[7%] w-full desktop:w-[50%]">
               <Image
                 src="/images/icon-star-in-circle.svg"
@@ -125,7 +125,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col desktop:flex-row-reverse gap-[5%] items-center">
+          <div className="flex flex-col desktop:flex-row-reverse gap-[40px] desktop:gap-[5%] items-center">
             <div className="flex items-start gap-[7%] w-full desktop:w-[50%] flex-row desktop:flex-row-reverse">
               <Image
                 src="/images/icon-star-in-circle.svg"
@@ -161,7 +161,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col desktop:flex-row gap-[5%] items-center">
+          <div className="flex flex-col desktop:flex-row gap-[40px] desktop:gap-[5%] items-center">
             <div className="flex items-start gap-[7%] w-full desktop:w-[50%]">
               <Image
                 src="/images/icon-star-in-circle.svg"
@@ -197,7 +197,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col desktop:flex-row-reverse gap-[5%] items-center">
+          <div className="flex flex-col desktop:flex-row-reverse gap-[40px] desktop:gap-[5%] items-center">
             <div className="flex items-start gap-[7%] w-full desktop:w-[50%] flex-row desktop:flex-row-reverse">
               <Image
                 src="/images/icon-star-in-circle.svg"
