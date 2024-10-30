@@ -8,7 +8,7 @@ const DeletionConfirmation = () => {
   };
 
   return (
-    <div className="pt-[62px] pb-[120px] flex flex-col items-center">
+    <div className="w-[min(86%,1800px)] mx-auto pt-[62px] pb-[120px] flex flex-col items-center">
       <h1 className="text-[#E31E1E] font-[500] text-[44px] font-avenir leading-[1.59] text-center">
         Account Deletion
       </h1>
