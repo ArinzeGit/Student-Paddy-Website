@@ -79,9 +79,6 @@ const Footer = () => {
           <Link href="" className="font-[400] text-[16px]">
             Cookie Policy
           </Link>
-          <Link href="/account-deletion" className="font-[400] text-[16px]">
-            Account Deletion
-          </Link>
         </div>
 
         <div className="flex flex-col gap-[33px] items-center tablet:items-start">
