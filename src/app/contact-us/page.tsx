@@ -14,34 +14,27 @@ const ContactUs = () => {
 
   const router = useRouter();
 
-  const handleSubmit = (event: React.FormEvent) => {
-    // Later switch to the second handleSubmit below
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    router.push("/contact-us/message-submitted");
-    console.log(formData);
+
+    try {
+      const response = await fetch("/api/contact-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        router.push("/contact-us/message-submitted");
+      } else {
+        console.error("Failed to send the message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
-
-  // const handleSubmit = async (event: React.FormEvent) => {
-  //   event.preventDefault();
-
-  //   try {
-  //     const response = await fetch("/api/contact-us", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     if (response.ok) {
-  //       router.push("/contact-us/message-submitted");
-  //     } else {
-  //       console.error("Failed to send the message.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //   }
-  // };
 
   const handleChange = (
     e: React.ChangeEvent<
