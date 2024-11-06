@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 export const metadata = {
-  title: "Student Paddy website",
+  title: "Student Paddy",
   description: "Student Paddy website",
 };
 
