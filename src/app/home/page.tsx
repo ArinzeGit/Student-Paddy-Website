@@ -183,7 +183,7 @@ const Home = () => {
                   href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[clamp(14px,calc(1.17vw+7.2px),18px)] font-avenir leading-[1.38] p-[max(9px,2vw)] tablet:p-[18px] rounded-[50px]"
                 >
-                  I'm interested
+                  I&apos;m interested
                 </Link>
               </div>
             </div>
@@ -219,7 +219,7 @@ const Home = () => {
                   href="/contact-us"
                   className="mt-[26px] inline-block bg-[#0F7863] text-[#FFFFFF] font-[500] text-[clamp(14px,calc(1.17vw+7.2px),18px)] font-avenir leading-[1.38] p-[max(9px,2vw)] tablet:p-[18px] rounded-[50px]"
                 >
-                  Let's go!
+                  Let&apos;s go!
                 </Link>
               </div>
             </div>
