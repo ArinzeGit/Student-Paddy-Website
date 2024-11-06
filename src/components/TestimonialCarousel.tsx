@@ -152,12 +152,12 @@ const TestimonialCarousel = () => {
                     className="h-[72vw] tablet:h-[48vw] desktop:h-[min(24vw,502px)] object-cover rounded-t-[4px]"
                   />
                   <div className="px-[3%] pt-[24px] pb-[14px] grow flex flex-col justify-between">
-                    <p className="font-[500] text-[16px] font-avenir italic leading-[1.8]">{`"${testimonial.feedback}"`}</p>
+                    <p className="font-[500] text-[16px] font-avenir text-[#000000] italic leading-[1.8]">{`"${testimonial.feedback}"`}</p>
                     <div>
-                      <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[38px]">
+                      <p className="font-[900] text-[16px] font-avenir text-[#000000] leading-[1.5] mt-[38px]">
                         {testimonial.name}
                       </p>
-                      <p className="font-[900] text-[16px] font-avenir leading-[1.5] mt-[11px]">
+                      <p className="font-[900] text-[16px] font-avenir text-[#000000] leading-[1.5] mt-[11px]">
                         {testimonial.role}
                       </p>
                     </div>
