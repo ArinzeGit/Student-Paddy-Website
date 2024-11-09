@@ -17,7 +17,7 @@ export default function RootLayout({
         <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
         </nav>
-        <div className="pt-[100px] overflow-y-auto no-scrollbar h-full flex flex-col justify-between">
+        <div className="pt-[100px] overflow-y-auto overflow-x-hidden no-scrollbar h-full flex flex-col justify-between">
           <main className="">{children}</main>
           <footer>
             <Footer />
