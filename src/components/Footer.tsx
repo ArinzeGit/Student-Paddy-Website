@@ -11,7 +11,7 @@ const Footer = () => {
           height={"65"}
           alt="student paddy logo"
         />
-        <p className="text-[#FFFFFF] font-[800] text-[16px] font-avenir leading-[1.37] mt-[43px]">
+        <p className="text-[#FFFFFF] font-[800] text-[16px] font-avenir leading-[1.37] mt-[43px] text-center">
           Unlocking Talent, Empowering Students
         </p>
         <div className="flex gap-[24px] mt-[42px]">
