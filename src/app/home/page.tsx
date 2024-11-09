@@ -16,11 +16,11 @@ const RealTimeClock = dynamic(() => import("../../components/RealTimeClock"), {
 const Home = () => {
   return (
     <div>
-      <div className="bg-[#0F7863] pt-[46px] pb-[114px]">
+      <div className="bg-[#0F7863] pt-[46px] pb-[120px] tablet:pb-[140px]">
         <div className="w-[min(86%,1800px)] mx-auto">
           <RealTimeClock />
 
-          <div className="flex flex-col tablet:flex-row gap-[100px] tablet:gap-[2.3%] mt-[38px] w-[60%] tablet:w-full mx-auto">
+          <div className="flex flex-col tablet:flex-row gap-[110px] tablet:gap-[2.3%] mt-[50px] tablet:mt-[38px] w-[60%] tablet:w-full mx-auto">
             <StatCard
               percentage={10}
               value="5 Interns"
