@@ -13,12 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#FFFFFF] h-screen flex flex-col">
-        <nav>
+      <body className="bg-[#FFFFFF] h-screen">
+        <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
         </nav>
-        <div className="overflow-y-auto no-scrollbar">
-          <main className="min-h-[calc(100vh-457px)]">{children}</main>
+        <div className="pt-[100px] overflow-y-auto no-scrollbar h-full flex flex-col justify-between">
+          <main className="">{children}</main>
           <footer>
             <Footer />
           </footer>
