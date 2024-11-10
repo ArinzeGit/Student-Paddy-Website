@@ -18,7 +18,7 @@ export default function RootLayout({
           <NavBar />
         </nav>
         <div className="pt-[100px] overflow-y-auto overflow-x-hidden no-scrollbar h-full flex flex-col justify-between">
-          <main className="">{children}</main>
+          <main>{children}</main>
           <footer>
             <Footer />
           </footer>
