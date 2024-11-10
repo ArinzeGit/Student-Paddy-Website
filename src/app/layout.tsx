@@ -13,11 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#FFFFFF] h-screen">
+      <body className="bg-[#FFFFFF] flex flex-col h-screen">
         <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
         </nav>
-        <div className="pt-[100px] overflow-y-auto overflow-x-hidden no-scrollbar h-full flex flex-col justify-between">
+        <div className="h-[100px] shrink-0" />
+        {/*Spacer div to occupy the space beneath the floating fixed NavBar*/}
+        <div className="overflow-y-auto overflow-x-hidden no-scrollbar flex-1 flex flex-col justify-between">
           <main>{children}</main>
           <footer>
             <Footer />
