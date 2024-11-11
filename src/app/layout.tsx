@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="overflow-y-auto no-scrollbar">
+    <html lang="en" className="overflow-y-auto overflow-x-hidden no-scrollbar">
       <body className="bg-[#FFFFFF] flex flex-col h-screen overflow-x-hidden">
         <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
