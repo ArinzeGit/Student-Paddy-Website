@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="overflow-y-auto overflow-x-hidden no-scrollbar">
+    <html lang="en" className="overflow-y-auto no-scrollbar">
       <body className="bg-[#FFFFFF] flex flex-col h-screen">
         <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
@@ -23,7 +23,7 @@ export default function RootLayout({
         {/*Spacer div for fixed NavBar*/}
         <div className="shrink-0 grow">
           <ScrollToTop>
-            <main>{children}</main>
+            <main className="w-screen overflow-x-hidden">{children}</main>
           </ScrollToTop>
         </div>
         <footer className="shrink-0">
