@@ -14,21 +14,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-y-auto overflow-x-hidden no-scrollbar">
       <body className="bg-[#FFFFFF] flex flex-col h-screen">
         <nav className="fixed top-0 left-0 w-full z-50">
           <NavBar />
         </nav>
-        <div className="min-h-[100px]" />
-        {/*Spacer div to occupy the space beneath the floating fixed NavBar*/}
-        <div className="overflow-y-auto overflow-x-hidden no-scrollbar flex-1 flex flex-col justify-between">
+        <div className="h-[100px] shrink-0" />
+        {/*Spacer div for fixed NavBar*/}
+        <div className="shrink-0 grow">
           <ScrollToTop>
             <main>{children}</main>
           </ScrollToTop>
-          <footer>
-            <Footer />
-          </footer>
         </div>
+        <footer className="shrink-0">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
