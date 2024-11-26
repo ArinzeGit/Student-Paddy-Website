@@ -59,4 +59,4 @@ jobs:
           app-name: 'student-paddy-website'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B78E44115A794F19A2C56C1EFE5FE4C6 }}
-          package: .
+          package: release.zip
