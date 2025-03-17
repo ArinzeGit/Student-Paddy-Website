@@ -21,7 +21,7 @@ const NavLink = ({ label, href, onClick }: NavLinkProps) => {
         href={href}
         className={`${
           isActive ? "text-[#0F7863] " : "text-[#474747]"
-        } font-[800] text-[16px] font-avenir leading-[1.37] mx-[18px]`}
+        } font-[800] text-[clamp(16px,1.6vw,20px)] font-avenir leading-[1.37] mx-[18px]`}
       >
         {label}
       </Link>

@@ -23,7 +23,7 @@ const NavBar = () => {
           className="z-[11]"
         />
         <div
-          className={`fixed tablet:static inset-0 z-10 bg-white bg-opacity-70 backdrop-blur-md flex flex-col tablet:flex-row justify-center items-center gap-y-6 tablet:self-end transition-[clip-path,opacity] duration-[400ms] ${
+          className={`fixed tablet:static inset-0 z-10 bg-white bg-opacity-70 backdrop-blur-md flex flex-col tablet:flex-row justify-center items-center gap-y-6 gap-x-[clamp(0px,calc(16.25vw-195px),130px)] tablet:self-end transition-[clip-path,opacity] duration-[400ms] ${
             isOpen
               ? "clip-path-circle-open opacity-100"
               : "clip-path-circle-closed opacity-0"
