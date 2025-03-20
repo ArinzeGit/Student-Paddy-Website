@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Paddy Website
 
-## Getting Started
+Welcome to the Student Paddy website! This project is a fully responsive web application built from scratch using Next.js 14. It showcases various UI features designed to provide a smooth user experience.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive Design**: The website is optimized for all screen sizes, ensuring a great experience on both desktop and mobile devices.
+- **Dynamic Carousels**: Engaging carousels to showcase important content.
+- **Marquee**: Eye-catching marquee effects for announcements and updates.
+- **Smooth Navigation**: Intuitive navigation for easy access to all sections.
+- **Contact Form**: A fully functional contact page that uses NodeMailer to send messages to Student Paddy and provide automated acknowledgment emails to users.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- [Next.js 14](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/) - Programming language that extends JavaScript
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [NodeMailer](https://nodemailer.com/)
+- CSS custom properties
+- Semantic HTML5 markup
+- [Node.js](https://nodejs.org/) - JavaScript runtime environment
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To get started with this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/ArinzeGit/My-Portfolio-Website.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate into the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cd student-paddy-website
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+
+## Usage
+
+- Explore the various features of the website.
+- Use the contact form to send messages directly to Student Paddy.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- Email: arinzeowoh@gmail.com
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
